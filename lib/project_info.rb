@@ -3,10 +3,6 @@
 require 'http'
 require 'yaml'
 
-def load_config
-  YAML.safe_load(File.read('config/secrets.yml'))
-end
-
 def trans_api_path
   'https://translation.googleapis.com/language/translate/v2'
 end
@@ -22,29 +18,7 @@ def send_translation_request(api_key, source_texts, target_language)
   )
 end
 
-def parse_response(response)
-  JSON.parse(response.body.to_s)
-end
-
-def extract_translations(parsed_response)
-  parsed_response['data']['translations'].map do |translation|
-    {
-      translated_text: translation['translatedText'],
-      detected_source_language: translation['detectedSourceLanguage']
-    }
-  end
-end
-
-def save_to_yaml(file_path, texts, translations)
-  File.open(file_path, 'w') do |file|
-    file.write({
-      texts:,
-      translations:
-    }.to_yaml)
-  end
-end
-
-config = load_config
+config = YAML.safe_load_file('config/secrets.yml')
 api_key = config['Google_Translation_Token']
 
 texts = [
@@ -55,11 +29,11 @@ texts = [
 ]
 target_language = 'zh-TW'
 
-response = send_translation_request(api_key, texts, target_language)
+response = send_translation_request(api_key, texts, target_language).parse
 
-parsed_response = parse_response(response)
-translations = extract_translations(parsed_response)
+translations = response['data']
+file_path = 'spec/fixtures/translation_results.yml'
 
-save_to_yaml('spec/fixtures/translation-results.yml', texts, translations)
+File.write(file_path, translations.to_yaml)
 
 puts 'Translation result saved to spec/fixtures/translation-results.yml'

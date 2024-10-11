@@ -1,16 +1,15 @@
-# Cloud Translation API
-Project to gather useful information from Google Translation (Cloud Translation) API
+# TrailSmith
 
-## Elements
+### Cloud Translation API
 
-- q (source texts)
-- target (target language)
-- translatedText
-- detectedSourceLanguage
+- **Elements:**
+    - q (source texts)
+    - target (target language)
+    - translatedText
+    - detectedSourceLanguage
 
-## Entites
-
-- Translations
+- **Entites:**
+    - Translations
 
 ## Install
 
