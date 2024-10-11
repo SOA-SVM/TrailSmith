@@ -1,25 +1,29 @@
 # frozen_string_literal: true
 
-require 'minitest/autorun'
-require 'minitest/rg'
-require 'yaml'
-require_relative '../lib/cloud_api'
-
-TEXTS = [
-  'Hello, world!', # test_en
-  '天気がいいから、散歩しましょう。', # test_ja
-  "C'est la vie", # test_fr
-  'Eso si que es' # test_es
-].freeze
-TARGET_LANGUAGE = 'zh-TW'
-CONFIG = YAML.safe_load_file('config/secrets.yml')
-API_KEY = CONFIG['Google_Translation_Token']
-CORRECT = YAML.safe_load_file('spec/fixtures/translation_results.yml')
+require_relative 'spec_helper'
 
 describe 'Test Cloud Translation API library' do
+  VCR.configure do |c|
+    c.cassette_library_dir = CASSETTES_FOLDER
+    c.hook_into :webmock
+
+    c.filter_sensitive_data('<CLOUD_TOKEN>') { CLOUD_TOKEN }
+    c.filter_sensitive_data('<CLOUD_TOKEN_ESC>') { CGI.escape(CLOUD_TOKEN) }
+  end
+
+  before do
+    VCR.insert_cassette CASSETTE_FILE,
+                        record: :new_episodes,
+                        match_requests_on: %i[method uri headers]
+  end
+
+  after do
+    VCR.eject_cassette
+  end
+
   describe 'Translation information' do
     it 'HAPPY: should provide correct translated attributes' do
-      translation = SVM::CloudApi.new(API_KEY).translation(TEXTS, TARGET_LANGUAGE)
+      translation = SVM::CloudApi.new(CLOUD_TOKEN).translation(TEXTS, TARGET_LANGUAGE)
       _(translation.translations).must_equal CORRECT['translations']
     end
 

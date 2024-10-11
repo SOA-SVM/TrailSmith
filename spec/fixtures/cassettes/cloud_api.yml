@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://translation.googleapis.com/language/translate/v2?key=BAD_TOKEN&q=Eso%20si%20que%20es&target=zh-TW
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - translation.googleapis.com
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Vary:
+      - Origin,Accept-Encoding
+      - Referer
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 11 Oct 2024 02:17:28 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Accept-Ranges:
+      - none
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error": {
+            "code": 400,
+            "message": "API key not valid. Please pass a valid API key.",
+            "errors": [
+              {
+                "message": "API key not valid. Please pass a valid API key.",
+                "domain": "global",
+                "reason": "badRequest"
+              }
+            ],
+            "status": "INVALID_ARGUMENT",
+            "details": [
+              {
+                "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+                "reason": "API_KEY_INVALID",
+                "domain": "googleapis.com",
+                "metadata": {
+                  "service": "translate.googleapis.com"
+                }
+              }
+            ]
+          }
+        }
+  recorded_at: Fri, 11 Oct 2024 02:17:28 GMT
+- request:
+    method: post
+    uri: https://translation.googleapis.com/language/translate/v2?key=<CLOUD_TOKEN>&q=Eso%20si%20que%20es&target=zh-TW
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - translation.googleapis.com
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin,Accept-Encoding
+      - Referer
+      - X-Origin
+      Date:
+      - Fri, 11 Oct 2024 02:17:28 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Accept-Ranges:
+      - none
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "data": {
+            "translations": [
+              {
+                "translatedText": "你好世界！",
+                "detectedSourceLanguage": "en"
+              },
+              {
+                "translatedText": "天氣很好，我們去散步吧。",
+                "detectedSourceLanguage": "ja"
+              },
+              {
+                "translatedText": "這就是生活",
+                "detectedSourceLanguage": "fr"
+              },
+              {
+                "translatedText": "就是這樣",
+                "detectedSourceLanguage": "es"
+              }
+            ]
+          }
+        }
+  recorded_at: Fri, 11 Oct 2024 02:17:28 GMT
+recorded_with: VCR 6.3.1

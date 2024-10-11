@@ -1,0 +1,10 @@
+---
+translations:
+- translatedText: 你好世界！
+  detectedSourceLanguage: en
+- translatedText: 天氣很好，我們去散步吧。
+  detectedSourceLanguage: ja
+- translatedText: 這就是生活
+  detectedSourceLanguage: fr
+- translatedText: 就是這樣
+  detectedSourceLanguage: es
