@@ -2,20 +2,28 @@
 
 require 'rake/testtask'
 
-CODE = 'lib/'
-
 task :default do
   puts `rake -T`
 end
 
 desc 'run tests'
 task :spec do
-  sh 'ruby spec/gateway_cloud_spec.rb'
+  sh 'ruby spec/gateway_*_spec.rb'
 end
 
 desc 'Keep reruning tests upon changes'
 task :respec do
   sh "rerun -c 'rake spec' --ignore 'coverage/*'"
+end
+
+desc 'Run web app'
+task :run do
+  sh 'bundle exec puma'
+end
+
+desc 'Keep rerunning web app upon changes'
+task :rerun do
+  sh "rerun -c --ignore 'coverage/*' -- bundle exec puma"
 end
 
 namespace :vcr do
@@ -28,18 +36,23 @@ namespace :vcr do
 end
 
 namespace :quality do
-  desc 'run all quality checks'
+  only_app = 'config/ app/'
+
+  desc 'run all static-analysis quality checks'
   task all: %i[rubocop reek flog]
 
+  desc 'code style linter'
   task :rubocop do
     sh 'rubocop'
   end
 
+  desc 'code smell detector'
   task :reek do
     sh 'reek'
   end
 
+  desc 'complexity analysis'
   task :flog do
-    sh "flog #{CODE}"
+    sh "flog -m #{only_app}"
   end
 end

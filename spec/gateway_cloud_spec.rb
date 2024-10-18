@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'spec_helper'
+require_relative 'spec_helper_cloud'
 
 describe 'Test Cloud Translation API library' do
   VCR.configure do |c|
@@ -27,8 +27,8 @@ describe 'Test Cloud Translation API library' do
       translated_text = @sentences.translated_text
       source_language = @sentences.source_language
 
-      correct_translated_text = CORRECT['translations'].map { |t| t['translatedText'] }
-      correct_source_language = CORRECT['translations'].map { |t| t['detectedSourceLanguage'] }
+      correct_translated_text = CORRECT['translations'].map { |arr| arr['translatedText'] }
+      correct_source_language = CORRECT['translations'].map { |arr| arr['detectedSourceLanguage'] }
 
       _(translated_text).must_equal correct_translated_text
       _(source_language).must_equal correct_source_language

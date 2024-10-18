@@ -3,4 +3,4 @@ detectors:
   IrresponsibleModule:
     enabled: false
 exclude_paths:
-  - spec/fixtures/project_info.rb # one-time test fixture creator
+  - spec/fixtures/project_info_cloud.rb # one-time test fixture creator

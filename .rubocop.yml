@@ -5,7 +5,12 @@ AllCops:
   NewCops: enable
   Include:
   - 'Gemfile'
-  - 'Rackefile'
+  - 'rakefile'
+  - '**/*.rb'
+
+require:
+  - rubocop-minitest
+  - rubocop-rake
 
 # ignore block length in test code only
 Metrics/BlockLength:

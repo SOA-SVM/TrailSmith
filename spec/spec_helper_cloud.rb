@@ -2,6 +2,7 @@
 
 require 'simplecov'
 SimpleCov.start
+
 require 'yaml'
 
 require 'minitest/autorun'
