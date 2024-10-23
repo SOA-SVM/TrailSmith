@@ -1,0 +1,44 @@
+.container.p-5.my-5.border
+  .row
+      h2
+        spot.display_name
+          = spot.display_name
+  .container
+    .row
+      .col-lg-1.col-md-2.col-sm-2
+        strong
+          spot.attribute Rating:
+      .col-lg-11.col-md-10.col-sm-6
+        spot.address 
+          = spot.rating
+    .row
+      .col-lg-1.col-md-2.col-sm-2
+        strong
+          spot.attribute Address:
+      .col-lg-11.col-md-10.col-sm-6
+        spot.address 
+          = spot.formatted_address
+
+    .row
+      .col-lg-1.col-md-2.col-sm-2
+        strong
+          spot.attribute Review1:
+      .col-lg-11.col-md-10.col-sm-6
+        spot.address 
+          = spot.reviews[0][:text]
+
+    .row
+      .col-lg-1.col-md-2.col-sm-2
+        strong
+          spot.attribute Review2:
+      .col-lg-11.col-md-10.col-sm-6
+        spot.address 
+          = spot.reviews[1][:text]
+
+    .row
+      .col-lg-1.col-md-2.col-sm-2
+        strong
+          spot.attribute Review3:
+      .col-lg-11.col-md-10.col-sm-6
+        spot.address 
+          = spot.reviews[2][:text]

@@ -10,12 +10,18 @@ end
 
 desc 'run tests'
 task :spec do
-  sh 'ruby spec/gateway_cloud_spec.rb'
+  sh 'ruby spec/gateway_*_spec.rb'
 end
+
 
 desc 'Keep reruning tests upon changes'
 task :respec do
   sh "rerun -c 'rake spec' --ignore 'coverage/*'"
+end
+
+desc 'Run web app'
+task :run do
+  sh 'bundle exec puma'
 end
 
 namespace :vcr do

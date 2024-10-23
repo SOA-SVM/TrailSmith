@@ -24,6 +24,7 @@ section
           p Showing results for restaurants...
 
       / Input group for search
-      .input-group.mt-3
-        input type="text" name="query" placeholder="Places to go, things to do, hotels..." required=true class="form-control"
-        button type="submit" class="btn btn-primary" Search
+      form action = "/location" method="POST" class="mt-3"
+        .input-group.mt-3
+          input type="text" name="query" placeholder="Places to go, things to do, hotels..." required=true class="form-control"
+          button type="submit" class="btn btn-primary" Search
