@@ -5,9 +5,11 @@ require 'yaml'
 
 text_search = lambda do |config, text_query|
   url = 'https://places.googleapis.com/v1/places:searchText'
+  place_info = 'places.id,places.displayName,places.types'
+  report_info = 'places.rating,places.reviews,places.userRatingCount'
   HTTP.headers(
     'X-Goog-Api-Key'   => config['GOOGLE_MAPS_KEY'],
-    'X-Goog-FieldMask' => 'places.displayName,places.formattedAddress,places.id,places.rating,places.reviews'
+    'X-Goog-FieldMask' => "#{place_info},#{report_info}"
   ).post(url, json: { textQuery: text_query })
 end
 
@@ -18,24 +20,17 @@ maps_results = {}
 
 # HAPPY project request
 text_query = 'NTHU'
-maps_response[text_query] = text_search.call(config, text_query)
-place = maps_response[text_query].parse
+maps_response[text_query] = text_search.call(config['development'], text_query)
+place = maps_response[text_query].parse['places'][0]
 
 ## change the naming convention from camelCase into snake_case
-maps_results['id'] = place['places'][0]['id']
-
-# should be 300新竹市東區光復路二段101號
-maps_results['formatted_address'] = place['places'][0]['formattedAddress']
-
-# should be 清華大學
-maps_results['display_name'] = place['places'][0]['displayName']['text']
-
-# should be 4.6
-maps_results['rating'] = place['places'][0]['rating'].to_f
-
-maps_results['reviews'] = place['places'][0]['reviews'].map do |review|
+maps_results['id'] = place['id']
+maps_results['name'] = place['displayName']['text']
+maps_results['rating'] = place['rating']
+maps_results['rating_count'] = place['userRatingCount']
+maps_results['reports'] = place['reviews'].map do |review|
   {
-    author_name: review['authorAttribution']['displayName'],
+    publish_time: review['publishTime'],
     rating: review['rating'].to_f,
     text: review['originalText']['text']
   }

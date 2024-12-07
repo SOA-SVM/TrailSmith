@@ -1,32 +1,28 @@
 # frozen_string_literal: false
 
+require 'json'
 require_relative 'spot_mapper'
 
 module TrailSmith
   module GoogleMaps
-    # Data Mapper: Maps place -> Spot entity
+    # build plan entity
     class PlanMapper
-      def initialize(key, text_query_list, type)
+      def initialize(key, gpt_json)
         @key = key
-        @text_query_list = text_query_list
-        @type = type
-      end
-
-      def _arrange_plan
-        spots = []
-        @text_query_list.each do |text_query|
-          spot = SpotMapper.new(@key).find(text_query)
-          spots << spot
-        end
-        spots
+        @gpt_json = gpt_json
       end
 
       def build_entity
-        Entity::Plan.new(
+        gpt_json = JSON.parse(@gpt_json)
+        TrailSmith::Entity::Plan.new(
           id: nil,
-          type: @type,
-          score: nil,
-          spots: _arrange_plan
+          spots: gpt_json['spots'].map do |spot_query|
+            SpotMapper.new(@key).build_entity(spot_query)
+          end,
+          # travelling: ,
+          region: gpt_json['region'],
+          num_people: gpt_json['num_people'],
+          day: gpt_json['day']
         )
       end
     end

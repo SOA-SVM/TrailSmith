@@ -21,6 +21,13 @@ describe 'Integration Tests of Maps API and Database' do
     end
 
     it 'HAPPY: should be able to save spot from Maps to database' do
+      gpt_json = {
+        num_people: 2,
+        spots: %w[nthu nycu],
+        region: 'Hsinchu',
+        day: 3
+      }
+
       plan = TrailSmith::GoogleMaps::PlanMapper.new(GOOGLE_MAPS_KEY, TEXT_QUERY_LIST, TYPE).build_entity
 
       _(plan[:spots][0].place_id).must_equal MAP_CORRECT['id']

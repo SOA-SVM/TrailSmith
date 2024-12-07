@@ -11,7 +11,7 @@ module TrailSmith
       end
 
       def place_data(text_query)
-        Request.new(@key).text_search(text_query).parse
+        Request.new(@key).text_search(text_query).parse['places'][0]
       end
 
       # Sends out HTTP requests to Github
@@ -22,9 +22,11 @@ module TrailSmith
 
         def text_search(text_query)
           url = 'https://places.googleapis.com/v1/places:searchText'
+          place_info = 'places.id,places.displayName'
+          report_info = 'places.rating,places.reviews,places.userRatingCount'
           http_response = HTTP.headers(
             'X-Goog-Api-Key'   => @key,
-            'X-Goog-FieldMask' => 'places.displayName,places.formattedAddress,places.id,places.rating,places.reviews'
+            'X-Goog-FieldMask' => "#{place_info},#{report_info}"
           ).post(url, json: { textQuery: text_query })
 
           Response.new(http_response).tap do |response|
@@ -58,10 +60,6 @@ module TrailSmith
 end
 
 # require 'json'
-# require_relative '../../../../require_app'
-# require_app
-
+# GOOGLE_MAPS_KEY = 'test'
 # TEXT_QUERY = 'NTHU'
-# GOOGLE_MAPS_KEY = ENV.fetch('GOOGLE_MAPS_KEY', nil)
-# test = TrailSmith::GoogleMaps::SpotMapper.new(GOOGLE_MAPS_KEY).find(TEXT_QUERY)
-# test.score
+# test = TrailSmith::GoogleMaps::Api.new(GOOGLE_MAPS_KEY).place_data(TEXT_QUERY)

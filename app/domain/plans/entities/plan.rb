@@ -10,13 +10,15 @@ module TrailSmith
     class Plan < Dry::Struct
       include Dry.Types
 
-      attribute :id,      Integer.optional
-      attribute :score,   Strict::Integer.optional
-      attribute :type,    Strict::String
-      attribute :spots,   Strict::Array.of(Spot)
+      attribute :id,         Integer.optional
+      attribute :spots,      Strict::Array.of(Spot)
+      attribute :travelling, Strict::Array.of(Travel)
+      attribute :region,     Strict::String
+      attribute :num_people, Strict::Integer
+      attribute :day,        Strict::Integer
 
-      def add_spot(spot)
-        spots << spot
+      def add_spot(spot_entity)
+        spots << spot_entity
       end
     end
   end

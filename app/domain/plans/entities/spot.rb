@@ -2,24 +2,27 @@
 
 require 'dry-types'
 require 'dry-struct'
+require_relative 'reports'
 
 module TrailSmith
   module Entity
-    # Domain entity for travel spots
+    # Domain entity for spots
     class Spot < Dry::Struct
       include Dry.Types
 
-      attribute :id,                Integer.optional
-      attribute :place_id,          Strict::String
-      attribute :formatted_address, Strict::String
-      attribute :display_name,      Strict::String
-      attribute :rating,            Strict::Float
-      attribute :reviews,           Strict::Array
+      attribute :id,           Integer.optional
+      attribute :place_id,     Strict::String
+      attribute :name,         Strict::String
+      attribute :rating,       Strict::Float
+      attribute :rating_count, Strict::Integer
+      attribute :reports,      Strict::Reports
 
-      def score
-        num = reviews.length + 1
-        sum = reviews.sum { |review| review[:rating] } + rating
-        (sum / num).round(2)
+      def fun
+        reports.fun
+      end
+
+      def popular
+        rating_count
       end
 
       def to_attr_hash

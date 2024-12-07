@@ -1,16 +1,18 @@
 ---
 id: ChIJB7ZNzXI2aDQREwR22ltdKxE
-formatted_address: No. 101號, Section 2, Guangfu Rd, East District, Hsinchu City, Taiwan
-  300
-display_name: National Tsing Hua University
+name: National Tsing Hua University
 rating: 4.6
-reviews:
-- :author_name: Bob Cook
+rating_count: 2559
+reports:
+- :publish_time: '2024-11-11T06:20:49.768565Z'
+  :rating: 5.0
+  :text: As a Beijing Tsinghua alumni, I am very happy to visit another smaller Tsinghua.
+- :publish_time: '2021-01-13T14:41:43.923338Z'
   :rating: 5.0
   :text: A large modern university campus with nice grounds and ponds. Very pleasant
     place to walk around. Be aware that scooters are not allowed inside and that it
     really is large so allow plenty of time if you’re going between building.
-- :author_name: Anindya Sundar Patra
+- :publish_time: '2020-10-05T05:08:12.152771Z'
   :rating: 5.0
   :text: In 1956, NTHU was re-established in Hsinchu city. NTHU was selected as one
     of the National Seven Research Universities in 2002. This University is spread
@@ -18,15 +20,11 @@ reviews:
     for different activities and this University has 18 dormitories for students.
     The strength of students here is more than 15k. The life, activity and culture
     is very vibrant here.
-- :author_name: Mohammad Faizan Akhtar
+- :publish_time: '2019-09-08T20:29:32.744688Z'
   :rating: 5.0
   :text: One of the Best University in Taiwan to pursue higher studies. Peaceful ambience
     and less crowded campus. Campus is very wide so be ready to excercise your legs.
-- :author_name: Washim Reza Ali
+- :publish_time: '2022-11-25T03:01:01.940947Z'
   :rating: 5.0
   :text: Very beautiful campus with gardens, lake, green fields. Neat and clean and
     well managed, lots of eateries, cafe.
-- :author_name: 登阮寶罄
-  :rating: 5.0
-  :text: Beautiful campus with many pine trees and large pond. Feeling peaceful and
-    calm every time visit here.
