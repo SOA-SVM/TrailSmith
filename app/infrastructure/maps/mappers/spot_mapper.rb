@@ -9,15 +9,15 @@ module TrailSmith
       end
 
       def build_entity(text_query)
-        @gateway.place_data(text_query)
+        spot = @gateway.place_data(text_query)
 
         Entity::Spot.new(
           id: nil,
-          place_id: place['id'],
-          name: place['displayName']['text'],
-          rating: place['rating'],
-          rating_count: place['userRatingCount'],
-          reports: Reports.new(place['reviews']).build_entity
+          place_id: spot['id'],
+          name: spot['displayName']['text'],
+          rating: spot['rating'],
+          rating_count: spot['userRatingCount'],
+          reports: Reports.new(spot['reviews']).build_entity
         )
       end
     end

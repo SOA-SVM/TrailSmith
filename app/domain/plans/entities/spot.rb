@@ -15,7 +15,7 @@ module TrailSmith
       attribute :name,         Strict::String
       attribute :rating,       Strict::Float
       attribute :rating_count, Strict::Integer
-      attribute :reports,      Strict::Reports
+      attribute :reports,      Reports
 
       def fun
         reports.fun

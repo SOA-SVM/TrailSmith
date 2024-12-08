@@ -7,13 +7,12 @@ module TrailSmith
   module GoogleMaps
     # build plan entity
     class PlanMapper
-      def initialize(key, gpt_json)
+      def initialize(key)
         @key = key
-        @gpt_json = gpt_json
       end
 
-      def build_entity
-        gpt_json = JSON.parse(@gpt_json)
+      def build_entity(gpt_json)
+        gpt_json = JSON.parse(gpt_json)
         TrailSmith::Entity::Plan.new(
           id: nil,
           spots: gpt_json['spots'].map do |spot_query|

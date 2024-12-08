@@ -600,4 +600,428 @@ http_interactions:
         \         \"googleMapsUri\": \"https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURBbGRuM1VBEAE!2m1!1s0x31da0f0a99014463:0xb8bb0800c52d8219\"\n
         \       }\n      ]\n    }\n  ]\n}\n"
   recorded_at: Sun, 17 Nov 2024 08:22:54 GMT
+- request:
+    method: post
+    uri: https://places.googleapis.com/v1/places:searchText
+    body:
+      encoding: UTF-8
+      string: '{"textQuery":"NTHU"}'
+    headers:
+      X-Goog-Api-Key:
+      - "<GOOGLE_MAPS_KEY>"
+      X-Goog-Fieldmask:
+      - places.id,places.displayName,places.rating,places.reviews,places.userRatingCount
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Host:
+      - places.googleapis.com
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin,Accept-Encoding
+      - Referer
+      - X-Origin
+      Date:
+      - Sat, 07 Dec 2024 16:41:35 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Server-Timing:
+      - gfet4t7; dur=184
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Accept-Ranges:
+      - none
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "places": [
+            {
+              "id": "ChIJB7ZNzXI2aDQREwR22ltdKxE",
+              "rating": 4.6,
+              "userRatingCount": 2559,
+              "displayName": {
+                "text": "National Tsing Hua University",
+                "languageCode": "en"
+              },
+              "reviews": [
+                {
+                  "name": "places/ChIJB7ZNzXI2aDQREwR22ltdKxE/reviews/ChZDSUhNMG9nS0VJQ0FnSUQzNEtiVEhBEAE",
+                  "relativePublishTimeDescription": "3 weeks ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "As a Beijing Tsinghua alumni, I am very happy to visit another smaller Tsinghua.",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "As a Beijing Tsinghua alumni, I am very happy to visit another smaller Tsinghua.",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "Kevin Zhang",
+                    "uri": "https://www.google.com/maps/contrib/108577504965898846202/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUwaz5cpd89Jm7ARAxDP8inE6thQQR3zeITKs50p816iXpBJS3r=s128-c0x00000000-cc-rp-mo-ba4"
+                  },
+                  "publishTime": "2024-11-11T06:20:49.768565Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUQzNEtiVEhBEAE&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUQzNEtiVEhBEAE!2m1!1s0x34683672cd4db607:0x112b5d5bda760413"
+                },
+                {
+                  "name": "places/ChIJB7ZNzXI2aDQREwR22ltdKxE/reviews/ChZDSUhNMG9nS0VJQ0FnSURTejczMVRnEAE",
+                  "relativePublishTimeDescription": "3 years ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "A large modern university campus with nice grounds and ponds. Very pleasant place to walk around. Be aware that scooters are not allowed inside and that it really is large so allow plenty of time if you’re going between building.",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "A large modern university campus with nice grounds and ponds. Very pleasant place to walk around. Be aware that scooters are not allowed inside and that it really is large so allow plenty of time if you’re going between building.",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "Bob Cook",
+                    "uri": "https://www.google.com/maps/contrib/113314347498798056711/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXnVtt9YJqcF1nKU0HYeFRnAskfJtzUZjJ7wzw1xsyOyTpVQFIGmQ=s128-c0x00000000-cc-rp-mo-ba6"
+                  },
+                  "publishTime": "2021-01-13T14:41:43.923338Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURTejczMVRnEAE&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURTejczMVRnEAE!2m1!1s0x34683672cd4db607:0x112b5d5bda760413"
+                },
+                {
+                  "name": "places/ChIJB7ZNzXI2aDQREwR22ltdKxE/reviews/ChdDSUhNMG9nS0VJQ0FnSURDNWV2eDRBRRAB",
+                  "relativePublishTimeDescription": "4 years ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "In 1956, NTHU was re-established in Hsinchu city. NTHU was selected as one of the National Seven Research Universities in 2002. This University is spread over 260 acres of land in East district. More than 100 student clubs are there for different activities and this University has 18 dormitories for students. The strength of students here is more than 15k. The life, activity and culture is very vibrant here.",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "In 1956, NTHU was re-established in Hsinchu city. NTHU was selected as one of the National Seven Research Universities in 2002. This University is spread over 260 acres of land in East district. More than 100 student clubs are there for different activities and this University has 18 dormitories for students. The strength of students here is more than 15k. The life, activity and culture is very vibrant here.",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "Anindya Sundar Patra",
+                    "uri": "https://www.google.com/maps/contrib/110737197638865475422/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWbidyRx30KzxQS5S73_5ciGKVXNY05P5CY_110Ou1zc8J8zQs=s128-c0x00000000-cc-rp-mo-ba5"
+                  },
+                  "publishTime": "2020-10-05T05:08:12.152771Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURDNWV2eDRBRRAB&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURDNWV2eDRBRRAB!2m1!1s0x34683672cd4db607:0x112b5d5bda760413"
+                },
+                {
+                  "name": "places/ChIJB7ZNzXI2aDQREwR22ltdKxE/reviews/ChdDSUhNMG9nS0VJQ0FnSURVci1tU3hnRRAB",
+                  "relativePublishTimeDescription": "5 years ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "One of the Best University in Taiwan to pursue higher studies. Peaceful ambience and less crowded campus. Campus is very wide so be ready to excercise your legs.",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "One of the Best University in Taiwan to pursue higher studies. Peaceful ambience and less crowded campus. Campus is very wide so be ready to excercise your legs.",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "Mohammad Faizan Akhtar",
+                    "uri": "https://www.google.com/maps/contrib/109937352854439838460/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXe3ZtSHh-9VAYsK_zfrAuPHOqyzHjjDSNoWHeCY0dxSmX_aAzB=s128-c0x00000000-cc-rp-mo-ba3"
+                  },
+                  "publishTime": "2019-09-08T20:29:32.744688Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURVci1tU3hnRRAB&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURVci1tU3hnRRAB!2m1!1s0x34683672cd4db607:0x112b5d5bda760413"
+                },
+                {
+                  "name": "places/ChIJB7ZNzXI2aDQREwR22ltdKxE/reviews/ChdDSUhNMG9nS0VJQ0FnSUQtb3VyeGhnRRAB",
+                  "relativePublishTimeDescription": "2 years ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "Very beautiful campus with gardens, lake, green fields. Neat and clean and well managed, lots of eateries, cafe.",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "Very beautiful campus with gardens, lake, green fields. Neat and clean and well managed, lots of eateries, cafe.",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "Washim Reza Ali",
+                    "uri": "https://www.google.com/maps/contrib/100133631403336202170/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLWNECSiwUyBvFWOIVokWE45xG8r_2mCsS489pDoo9xmosN=s128-c0x00000000-cc-rp-mo-ba3"
+                  },
+                  "publishTime": "2022-11-25T03:01:01.940947Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUQtb3VyeGhnRRAB&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUQtb3VyeGhnRRAB!2m1!1s0x34683672cd4db607:0x112b5d5bda760413"
+                }
+              ]
+            }
+          ]
+        }
+  recorded_at: Sat, 07 Dec 2024 16:41:35 GMT
+- request:
+    method: post
+    uri: https://places.googleapis.com/v1/places:searchText
+    body:
+      encoding: UTF-8
+      string: '{"textQuery":"nycu"}'
+    headers:
+      X-Goog-Api-Key:
+      - "<GOOGLE_MAPS_KEY>"
+      X-Goog-Fieldmask:
+      - places.id,places.displayName,places.rating,places.reviews,places.userRatingCount
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Host:
+      - places.googleapis.com
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin,Accept-Encoding
+      - Referer
+      - X-Origin
+      Date:
+      - Sat, 07 Dec 2024 17:16:30 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Server-Timing:
+      - gfet4t7; dur=212
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Accept-Ranges:
+      - none
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "places": [
+            {
+              "id": "ChIJMV8k71c2aDQRmj5yOn_aKTk",
+              "rating": 4.6,
+              "userRatingCount": 1764,
+              "displayName": {
+                "text": "National Yang Ming Chiao Tung University",
+                "languageCode": "en"
+              },
+              "reviews": [
+                {
+                  "name": "places/ChIJMV8k71c2aDQRmj5yOn_aKTk/reviews/ChZDSUhNMG9nS0VJQ0FnSUNyZ2FqZWZ3EAE",
+                  "relativePublishTimeDescription": "5 months ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "Four years after completing my master's degree in semiconductor technology at NCTU, I realized how proud I am to have studied here. The professors are excellent in their teaching, and the campus is very student-friendly compared to many universities worldwide. I made great friends here, both humans and dogs! I learned a lot from NCTU, and this experience has greatly helped my career. Below are some of the pics I took during my two years at this uni. Don't miss the pics of my furry friends, chiaba, danke, tiedan and songshu at the end!",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "Four years after completing my master's degree in semiconductor technology at NCTU, I realized how proud I am to have studied here. The professors are excellent in their teaching, and the campus is very student-friendly compared to many universities worldwide. I made great friends here, both humans and dogs! I learned a lot from NCTU, and this experience has greatly helped my career. Below are some of the pics I took during my two years at this uni. Don't miss the pics of my furry friends, chiaba, danke, tiedan and songshu at the end!",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "Amit Sravan",
+                    "uri": "https://www.google.com/maps/contrib/100098845219501880450/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU9bA4WzDh8hr3LluzkMqRE3MdpDdof87I7TrpsC71E5ZD5v4JKcw=s128-c0x00000000-cc-rp-mo-ba3"
+                  },
+                  "publishTime": "2024-07-07T19:55:34.909463Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNyZ2FqZWZ3EAE&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNyZ2FqZWZ3EAE!2m1!1s0x34683657ef245f31:0x3929da7f3a723e9a"
+                },
+                {
+                  "name": "places/ChIJMV8k71c2aDQRmj5yOn_aKTk/reviews/ChZDSUhNMG9nS0VJQ0FnSUR3M1BYNkh3EAE",
+                  "relativePublishTimeDescription": "6 years ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "One of the best university to study electronics and computer science. Apart of academics the school has beautiful campus and good canteens. The school also has a awesome waffle shop.",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "One of the best university to study electronics and computer science. Apart of academics the school has beautiful campus and good canteens. The school also has a awesome waffle shop.",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "SEWAKE DEWANSHU CHHAGAN",
+                    "uri": "https://www.google.com/maps/contrib/116862919740793312336/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLdl9yLtsnoTAYlPgM2zlCU83emye0eCu9nU9FhpOla_qxa4w=s128-c0x00000000-cc-rp-mo-ba4"
+                  },
+                  "publishTime": "2018-02-21T05:13:24.790Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUR3M1BYNkh3EAE&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUR3M1BYNkh3EAE!2m1!1s0x34683657ef245f31:0x3929da7f3a723e9a"
+                },
+                {
+                  "name": "places/ChIJMV8k71c2aDQRmj5yOn_aKTk/reviews/ChdDSUhNMG9nS0VJQ0FnSUNvamY3djNBRRAB",
+                  "relativePublishTimeDescription": "5 years ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "Love NCTU's artificial waterfall with lot of koi in it. And more over its Taiwan's No.3 university .",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "Love NCTU's artificial waterfall with lot of koi in it. And more over its Taiwan's No.3 university .",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "sagarika dash",
+                    "uri": "https://www.google.com/maps/contrib/111562388246307545703/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUwLTvnoNKdT2-orl1CQCkSbkFjvM9FsWOSnhyVovgv6l63enLzbA=s128-c0x00000000-cc-rp-mo-ba4"
+                  },
+                  "publishTime": "2019-02-22T16:16:25.843844Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNvamY3djNBRRAB&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNvamY3djNBRRAB!2m1!1s0x34683657ef245f31:0x3929da7f3a723e9a"
+                },
+                {
+                  "name": "places/ChIJMV8k71c2aDQRmj5yOn_aKTk/reviews/ChZDSUhNMG9nS0VJQ0FnSUR3cnFTeGJnEAE",
+                  "relativePublishTimeDescription": "7 years ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "Very vast university and open to the public.\nYou can walk around the campus, enjoy academic atmosphere.",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "Very vast university and open to the public.\nYou can walk around the campus, enjoy academic atmosphere.",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "押井礼太",
+                    "uri": "https://www.google.com/maps/contrib/108628049931580992805/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU3hM6Sy9NpuVT4gfGc7lDIWub_zXyItnHe0y6Ov4NgCYzBS44Gqw=s128-c0x00000000-cc-rp-mo-ba7"
+                  },
+                  "publishTime": "2017-01-14T10:10:20.029Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUR3cnFTeGJnEAE&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUR3cnFTeGJnEAE!2m1!1s0x34683657ef245f31:0x3929da7f3a723e9a"
+                },
+                {
+                  "name": "places/ChIJMV8k71c2aDQRmj5yOn_aKTk/reviews/ChdDSUhNMG9nS0VJQ0FnSURIeE5ENnhBRRAB",
+                  "relativePublishTimeDescription": "2 months ago",
+                  "rating": 5,
+                  "text": {
+                    "text": "Been here two times for the last two years. It was a really nice research visit.",
+                    "languageCode": "en"
+                  },
+                  "originalText": {
+                    "text": "Been here two times for the last two years. It was a really nice research visit.",
+                    "languageCode": "en"
+                  },
+                  "authorAttribution": {
+                    "displayName": "brian bramanto",
+                    "uri": "https://www.google.com/maps/contrib/102333104449638603833/reviews",
+                    "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXMLaXdcaMawF9IeE6PPdKWaXH3pggpef6ylhq8vpI4w5RQyJs=s128-c0x00000000-cc-rp-mo-ba4"
+                  },
+                  "publishTime": "2024-09-12T14:27:06.234486Z",
+                  "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURIeE5ENnhBRRAB&d=17924085&t=1",
+                  "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURIeE5ENnhBRRAB!2m1!1s0x34683657ef245f31:0x3929da7f3a723e9a"
+                }
+              ]
+            }
+          ]
+        }
+  recorded_at: Sat, 07 Dec 2024 17:16:30 GMT
+- request:
+    method: post
+    uri: https://places.googleapis.com/v1/places:searchText
+    body:
+      encoding: UTF-8
+      string: '{"textQuery":"nthu"}'
+    headers:
+      X-Goog-Api-Key:
+      - WRONG_KEY
+      X-Goog-Fieldmask:
+      - places.id,places.displayName,places.rating,places.reviews,places.userRatingCount
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Host:
+      - places.googleapis.com
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Vary:
+      - Origin,Accept-Encoding
+      - Referer
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 07 Dec 2024 17:20:24 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Server-Timing:
+      - gfet4t7; dur=27
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Accept-Ranges:
+      - none
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error": {
+            "code": 400,
+            "message": "API key not valid. Please pass a valid API key.",
+            "status": "INVALID_ARGUMENT",
+            "details": [
+              {
+                "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+                "reason": "API_KEY_INVALID",
+                "domain": "googleapis.com",
+                "metadata": {
+                  "service": "places.googleapis.com"
+                }
+              },
+              {
+                "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+                "locale": "en-US",
+                "message": "API key not valid. Please pass a valid API key."
+              }
+            ]
+          }
+        }
+  recorded_at: Sat, 07 Dec 2024 17:20:25 GMT
 recorded_with: VCR 6.3.1

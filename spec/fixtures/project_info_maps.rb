@@ -21,14 +21,14 @@ maps_results = {}
 # HAPPY project request
 text_query = 'NTHU'
 maps_response[text_query] = text_search.call(config['development'], text_query)
-place = maps_response[text_query].parse['places'][0]
+spot = maps_response[text_query].parse['places'][0]
 
 ## change the naming convention from camelCase into snake_case
-maps_results['id'] = place['id']
-maps_results['name'] = place['displayName']['text']
-maps_results['rating'] = place['rating']
-maps_results['rating_count'] = place['userRatingCount']
-maps_results['reports'] = place['reviews'].map do |review|
+maps_results[:place_id] = spot['id']
+maps_results[:name] = spot['displayName']['text']
+maps_results[:rating] = spot['rating']
+maps_results[:rating_count] = spot['userRatingCount']
+maps_results[:reports] = spot['reviews'].map do |review|
   {
     publish_time: review['publishTime'],
     rating: review['rating'].to_f,
