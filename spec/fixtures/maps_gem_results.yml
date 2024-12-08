@@ -1,0 +1,1465 @@
+--- !ruby/object:Google::Maps::Route
+from: !ruby/object:Google::Maps::PlaceDetails
+  data: !ruby/hash:Google::Maps::Result
+    address_components: !ruby/array:Hashie::Array
+    - !ruby/hash:Google::Maps::Result
+      long_name: 101號
+      short_name: 101號
+      types: !ruby/array:Hashie::Array
+      - street_number
+    - !ruby/hash:Google::Maps::Result
+      long_name: Section 2, Guangfu Road
+      short_name: Section 2, Guangfu Rd
+      types: !ruby/array:Hashie::Array
+      - route
+    - !ruby/hash:Google::Maps::Result
+      long_name: 光明里
+      short_name: 光明里
+      types: !ruby/array:Hashie::Array
+      - administrative_area_level_3
+      - political
+    - !ruby/hash:Google::Maps::Result
+      long_name: East District
+      short_name: East District
+      types: !ruby/array:Hashie::Array
+      - administrative_area_level_2
+      - political
+    - !ruby/hash:Google::Maps::Result
+      long_name: Hsinchu City
+      short_name: Hsinchu City
+      types: !ruby/array:Hashie::Array
+      - administrative_area_level_1
+      - political
+    - !ruby/hash:Google::Maps::Result
+      long_name: Taiwan
+      short_name: TW
+      types: !ruby/array:Hashie::Array
+      - country
+      - political
+    - !ruby/hash:Google::Maps::Result
+      long_name: '300'
+      short_name: '300'
+      types: !ruby/array:Hashie::Array
+      - postal_code
+    adr_address: <span class="street-address">No. 101號, Section 2, Guangfu Rd, 光明里</span>
+      <span class="locality">East District</span>, <span class="region">Hsinchu City</span>,
+      <span class="country-name">Taiwan</span> <span class="postal-code">300</span>
+    business_status: OPERATIONAL
+    current_opening_hours: !ruby/hash:Google::Maps::Result
+      open_now: true
+      periods: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          date: '2024-12-14'
+          day: 6
+          time: '2359'
+          truncated: true
+        open: !ruby/hash:Google::Maps::Result
+          date: '2024-12-08'
+          day: 0
+          time: '0000'
+          truncated: true
+      weekday_text: !ruby/array:Hashie::Array
+      - 'Monday: Open 24 hours'
+      - 'Tuesday: Open 24 hours'
+      - 'Wednesday: Open 24 hours'
+      - 'Thursday: Open 24 hours'
+      - 'Friday: Open 24 hours'
+      - 'Saturday: Open 24 hours'
+      - 'Sunday: Open 24 hours'
+    formatted_address: No. 101號, Section 2, Guangfu Rd, East District, Hsinchu City,
+      Taiwan 300
+    formatted_phone_number: 03 571 5131
+    geometry: !ruby/hash:Google::Maps::Result
+      location: !ruby/hash:Google::Maps::Result
+        lat: 24.7961217
+        lng: 120.9966699
+      viewport: !ruby/hash:Google::Maps::Result
+        northeast: !ruby/hash:Google::Maps::Result
+          lat: 24.7974564302915
+          lng: 120.9980069302915
+        southwest: !ruby/hash:Google::Maps::Result
+          lat: 24.7947584697085
+          lng: 120.9953089697085
+    icon: https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png
+    icon_background_color: "#7B9EB0"
+    icon_mask_base_uri: https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet
+    international_phone_number: "+886 3 571 5131"
+    name: National Tsing Hua University
+    opening_hours: !ruby/hash:Google::Maps::Result
+      open_now: true
+      periods: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        open: !ruby/hash:Google::Maps::Result
+          day: 0
+          time: '0000'
+      weekday_text: !ruby/array:Hashie::Array
+      - 'Monday: Open 24 hours'
+      - 'Tuesday: Open 24 hours'
+      - 'Wednesday: Open 24 hours'
+      - 'Thursday: Open 24 hours'
+      - 'Friday: Open 24 hours'
+      - 'Saturday: Open 24 hours'
+      - 'Sunday: Open 24 hours'
+    photos: !ruby/array:Hashie::Array
+    - !ruby/hash:Google::Maps::Result
+      height: 2252
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/116035333380721623088">Edward
+        Yu</a>
+      photo_reference: AdDdOWpGSHDboILN6Nbo3KizFv2DOlFameeBpLpUgdhOWrcxAaHg6dRZ5JrFWndssp0zvEKgurQ2SYQ5q2aW18tKxRO6O5gRgIH-q66hw4h5ciCVXOUmej9f0TY-sXuFoI6qTIVdfoKq1COCMT9ND5p3s3GSaDJ3WOPKU6DEU9aszXtSEi8I
+      width: 4000
+    - !ruby/hash:Google::Maps::Result
+      height: 4000
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/102498632990628045652">Jungwoo
+        Nam</a>
+      photo_reference: AdDdOWp1wanZorPBVT0FpyIEbrINL3h4u6ctfv9hoKlmic9tFf_ocDItVD1Qaxsb5vMmcw6eH3ChBVAOxdmlhgB8NRM_wIlwTCfQ5Ab_FJ0utyLXU8kG0DhPQv5EHSSExtggvLs0rI9aEBjsyaN5OzG2OIe0bMOmh4ugj5oUcnXNDFofoiND
+      width: 3000
+    - !ruby/hash:Google::Maps::Result
+      height: 3024
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/117755807307517509519">Stanley
+        Kuo</a>
+      photo_reference: AdDdOWoaZnwFsYgWyODRgiuoXZBJKxG6iKZDpiU4IKeaaTSs8_f_2RoiPwSQOaJY4yppVwNw-RQpQvrI9z-jiVyPNTgbU6g-dtIhy4Er3ZyP0FoDaz51b9wc1xu8hc0o9b1cAJX8_D8hHhAEUrO2otOyrj7RiPpmKwMPDCOobX5EsfTIAZMI
+      width: 4032
+    - !ruby/hash:Google::Maps::Result
+      height: 4032
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/109116130096837498326">釋俊仁</a>
+      photo_reference: AdDdOWr1IGa3ppDxg2JJxe91HHwcFn3NevwHvlISkIH5sWH9JeC-6D0Q7SvMMrAnKuUnARyOjGMoAyZzFnrwCnlMFbeihjjIed-MPNWtJmNdO07xdSpxSpKLJiXI7pIKOQMyI3vb7X0KuO2Lg0JPZdYtJPxz8zGAy2qcGosDbmZzw6dfywBh
+      width: 3024
+    - !ruby/hash:Google::Maps::Result
+      height: 2592
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/100558588082090540311">Jimmy
+        L</a>
+      photo_reference: AdDdOWqL18VvpIa7CaJre9pQs8lKS9tEcjljFw84-rFJJNuxzxlv_k4n6jd6W6u7ZOPOk1CsexevwY6sAP17UUuE3_n1V-fM0VW3swOy4YOaLSMRXQvoM2YzWhu4RrhZg_QVVxvcqIF4vW9oeqG32s-vHcdC6bDS_Ixwf5yKfGQttWDpj9id
+      width: 3849
+    - !ruby/hash:Google::Maps::Result
+      height: 4032
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/112576848708957503520">Peiling
+        Hs</a>
+      photo_reference: AdDdOWqyAIdvSFqJCwm3gvQwLrpbjcY29Z6GAIP8epboSUJYZG44Lhdpfh7sc-ouHzxw0pM_FHrBI_OtbsZr_IMcOVuBLhlSQaERRXhvyPuqzBO9Htgjj90k__r3C778eEOLloOLsjpOOnzxH04YfnoIBDIkwg0cSzPk8MOfQXp5dHaBTlFB
+      width: 3024
+    - !ruby/hash:Google::Maps::Result
+      height: 2304
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/109436906680718026455">Peishu
+        Fan</a>
+      photo_reference: AdDdOWpgcZem5tY9c5rcjvUYxF2fHHHff6P4zw-vtCVMXds9p82Ye0vPmGNjPhEohY7M_iSr_NMfp27Cuii3n3Ko1T8vPaCw5zicViC4Tmkp6UT472qzfH5eLV030ey5WZ9jfTibUEfRueDNT-LLzjf9pSo4Pu59JsgVb5G5yavtL_xmz3ZQ
+      width: 4096
+    - !ruby/hash:Google::Maps::Result
+      height: 3000
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/110742930196592467978">Tyler
+        Chen, Ph.D.</a>
+      photo_reference: AdDdOWrcTu2Nz3VvGWv6VDliRqnDFpRwBdvdAbB72Rfw9fdBTxa_78rhjLJAvOXxHo_zt1740iDisDDZCT_lvnJ8ArdcUDsrKRowVmY2813IhRfYJEedBcv6aTXYA6gD71USClyXRt2zIlLqXk3gj5ZHMobtRXjRynyNQQuQwEvAIwmjOF_4
+      width: 4000
+    - !ruby/hash:Google::Maps::Result
+      height: 4032
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/102799541546465020775">陳旭彬</a>
+      photo_reference: AdDdOWqAODC_iqxhQY7r17Xom4EqjIbck4yJuwAgCQQzg81N6ej0PjjqgmS5rSGJ8m-FL0tSR19rHuEhZymUwfRhjFJ8DRXlUw8UEtCDhO-pWKIs08ct7vfwrF3nmb9Jh8R6kbHPaTc-1Bb5zNu7lDFPbdJPR0uik-NCmzUnSQpnkQOkiFkL
+      width: 3024
+    - !ruby/hash:Google::Maps::Result
+      height: 3024
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/118187450480521484717">Likuo
+        Hsieh</a>
+      photo_reference: AdDdOWrWDzewJukcwsK-qbfD9C3vYGcULKXSa2FJyaDrLpO8P1e2fJ8PlgtHvAU4k_G5QhGEpfGDYlYQJytMcb8fmI8rgbtTaJC7c58UJ6ICPmJgI-KaS1DzRz5kDrKWq3cpDgEZdkUdOi_zawcxHYvpq3CbWp1DrK1xehIgZH4uDDkmoXBF
+      width: 4032
+    place_id: ChIJB7ZNzXI2aDQREwR22ltdKxE
+    plus_code: !ruby/hash:Google::Maps::Result
+      compound_code: QXWW+CM Taiwan, Hsinchu City, East District, 光明里
+      global_code: 7QP2QXWW+CM
+    rating: 4.6
+    reference: ChIJB7ZNzXI2aDQREwR22ltdKxE
+    reviews: !ruby/array:Hashie::Array
+    - !ruby/hash:Google::Maps::Result
+      author_name: Kevin Zhang
+      author_url: https://www.google.com/maps/contrib/108577504965898846202/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjUwaz5cpd89Jm7ARAxDP8inE6thQQR3zeITKs50p816iXpBJS3r=s128-c0x00000000-cc-rp-mo-ba4
+      rating: 5
+      relative_time_description: 3 weeks ago
+      text: As a Beijing Tsinghua alumni, I am very happy to visit another smaller
+        Tsinghua.
+      time: 1731306049
+      translated: false
+    - !ruby/hash:Google::Maps::Result
+      author_name: Bob Cook
+      author_url: https://www.google.com/maps/contrib/113314347498798056711/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjXnVtt9YJqcF1nKU0HYeFRnAskfJtzUZjJ7wzw1xsyOyTpVQFIGmQ=s128-c0x00000000-cc-rp-mo-ba6
+      rating: 5
+      relative_time_description: 3 years ago
+      text: A large modern university campus with nice grounds and ponds. Very pleasant
+        place to walk around. Be aware that scooters are not allowed inside and that
+        it really is large so allow plenty of time if you’re going between building.
+      time: 1610548903
+      translated: false
+    - !ruby/hash:Google::Maps::Result
+      author_name: Anindya Sundar Patra
+      author_url: https://www.google.com/maps/contrib/110737197638865475422/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjWbidyRx30KzxQS5S73_5ciGKVXNY05P5CY_110Ou1zc8J8zQs=s128-c0x00000000-cc-rp-mo-ba5
+      rating: 5
+      relative_time_description: 4 years ago
+      text: In 1956, NTHU was re-established in Hsinchu city. NTHU was selected as
+        one of the National Seven Research Universities in 2002. This University is
+        spread over 260 acres of land in East district. More than 100 student clubs
+        are there for different activities and this University has 18 dormitories
+        for students. The strength of students here is more than 15k. The life, activity
+        and culture is very vibrant here.
+      time: 1601874492
+      translated: false
+    - !ruby/hash:Google::Maps::Result
+      author_name: Mohammad Faizan Akhtar
+      author_url: https://www.google.com/maps/contrib/109937352854439838460/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjXe3ZtSHh-9VAYsK_zfrAuPHOqyzHjjDSNoWHeCY0dxSmX_aAzB=s128-c0x00000000-cc-rp-mo-ba3
+      rating: 5
+      relative_time_description: 5 years ago
+      text: One of the Best University in Taiwan to pursue higher studies. Peaceful
+        ambience and less crowded campus. Campus is very wide so be ready to excercise
+        your legs.
+      time: 1567974572
+      translated: false
+    - !ruby/hash:Google::Maps::Result
+      author_name: Washim Reza Ali
+      author_url: https://www.google.com/maps/contrib/100133631403336202170/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a/ACg8ocLWNECSiwUyBvFWOIVokWE45xG8r_2mCsS489pDoo9xmosN=s128-c0x00000000-cc-rp-mo-ba3
+      rating: 5
+      relative_time_description: 2 years ago
+      text: Very beautiful campus with gardens, lake, green fields. Neat and clean
+        and well managed, lots of eateries, cafe.
+      time: 1669345261
+      translated: false
+    types: !ruby/array:Hashie::Array
+    - university
+    - point_of_interest
+    - establishment
+    url: https://maps.google.com/?cid=1237185171731907603
+    user_ratings_total: 2559
+    utc_offset: 480
+    vicinity: No. 101號, Section 2, Guangfu Road, East District
+    website: http://www.nthu.edu.tw/
+    wheelchair_accessible_entrance: true
+to: !ruby/object:Google::Maps::PlaceDetails
+  data: !ruby/hash:Google::Maps::Result
+    address_components: !ruby/array:Hashie::Array
+    - !ruby/hash:Google::Maps::Result
+      long_name: 229號
+      short_name: 229號
+      types: !ruby/array:Hashie::Array
+      - street_number
+    - !ruby/hash:Google::Maps::Result
+      long_name: Zhongyang Road
+      short_name: Zhongyang Rd
+      types: !ruby/array:Hashie::Array
+      - route
+    - !ruby/hash:Google::Maps::Result
+      long_name: 復中里
+      short_name: 復中里
+      types: !ruby/array:Hashie::Array
+      - administrative_area_level_3
+      - political
+    - !ruby/hash:Google::Maps::Result
+      long_name: East District
+      short_name: East District
+      types: !ruby/array:Hashie::Array
+      - administrative_area_level_2
+      - political
+    - !ruby/hash:Google::Maps::Result
+      long_name: Hsinchu City
+      short_name: Hsinchu City
+      types: !ruby/array:Hashie::Array
+      - administrative_area_level_1
+      - political
+    - !ruby/hash:Google::Maps::Result
+      long_name: Taiwan
+      short_name: TW
+      types: !ruby/array:Hashie::Array
+      - country
+      - political
+    - !ruby/hash:Google::Maps::Result
+      long_name: '30041'
+      short_name: '30041'
+      types: !ruby/array:Hashie::Array
+      - postal_code
+    adr_address: <span class="street-address">No. 229號, Zhongyang Rd, 復中里</span> <span
+      class="locality">East District</span>, <span class="region">Hsinchu City</span>,
+      <span class="country-name">Taiwan</span> <span class="postal-code">30041</span>
+    business_status: OPERATIONAL
+    current_opening_hours: !ruby/hash:Google::Maps::Result
+      open_now: true
+      periods: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          date: '2024-12-08'
+          day: 0
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          date: '2024-12-08'
+          day: 0
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          date: '2024-12-09'
+          day: 1
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          date: '2024-12-09'
+          day: 1
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          date: '2024-12-10'
+          day: 2
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          date: '2024-12-10'
+          day: 2
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          date: '2024-12-11'
+          day: 3
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          date: '2024-12-11'
+          day: 3
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          date: '2024-12-12'
+          day: 4
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          date: '2024-12-12'
+          day: 4
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          date: '2024-12-13'
+          day: 5
+          time: '2200'
+        open: !ruby/hash:Google::Maps::Result
+          date: '2024-12-13'
+          day: 5
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          date: '2024-12-14'
+          day: 6
+          time: '2200'
+        open: !ruby/hash:Google::Maps::Result
+          date: '2024-12-14'
+          day: 6
+          time: '1100'
+      weekday_text: !ruby/array:Hashie::Array
+      - 'Monday: 11:00 AM – 9:30 PM'
+      - 'Tuesday: 11:00 AM – 9:30 PM'
+      - 'Wednesday: 11:00 AM – 9:30 PM'
+      - 'Thursday: 11:00 AM – 9:30 PM'
+      - 'Friday: 11:00 AM – 10:00 PM'
+      - 'Saturday: 11:00 AM – 10:00 PM'
+      - 'Sunday: 11:00 AM – 9:30 PM'
+    formatted_address: No. 229號, Zhongyang Rd, East District, Hsinchu City, Taiwan
+      30041
+    formatted_phone_number: 03 623 8000
+    geometry: !ruby/hash:Google::Maps::Result
+      location: !ruby/hash:Google::Maps::Result
+        lat: 24.8098161
+        lng: 120.9751319
+      viewport: !ruby/hash:Google::Maps::Result
+        northeast: !ruby/hash:Google::Maps::Result
+          lat: 24.8107183802915
+          lng: 120.9758804802915
+        southwest: !ruby/hash:Google::Maps::Result
+          lat: 24.8080204197085
+          lng: 120.9731825197085
+    icon: https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png
+    icon_background_color: "#4B96F3"
+    icon_mask_base_uri: https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet
+    international_phone_number: "+886 3 623 8000"
+    name: Big City
+    opening_hours: !ruby/hash:Google::Maps::Result
+      open_now: true
+      periods: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          day: 0
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          day: 0
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          day: 1
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          day: 1
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          day: 2
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          day: 2
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          day: 3
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          day: 3
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          day: 4
+          time: '2130'
+        open: !ruby/hash:Google::Maps::Result
+          day: 4
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          day: 5
+          time: '2200'
+        open: !ruby/hash:Google::Maps::Result
+          day: 5
+          time: '1100'
+      - !ruby/hash:Google::Maps::Result
+        close: !ruby/hash:Google::Maps::Result
+          day: 6
+          time: '2200'
+        open: !ruby/hash:Google::Maps::Result
+          day: 6
+          time: '1100'
+      weekday_text: !ruby/array:Hashie::Array
+      - 'Monday: 11:00 AM – 9:30 PM'
+      - 'Tuesday: 11:00 AM – 9:30 PM'
+      - 'Wednesday: 11:00 AM – 9:30 PM'
+      - 'Thursday: 11:00 AM – 9:30 PM'
+      - 'Friday: 11:00 AM – 10:00 PM'
+      - 'Saturday: 11:00 AM – 10:00 PM'
+      - 'Sunday: 11:00 AM – 9:30 PM'
+    photos: !ruby/array:Hashie::Array
+    - !ruby/hash:Google::Maps::Result
+      height: 3024
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/117563928393288885527">JUYU
+        H</a>
+      photo_reference: AdDdOWqi3mP-1Tj4oTj7TCp-CyLIC1WJiuHZlkBXNR8bXoAZ_9mCMHbQ3mtbCE6n6i0hUo5BVF23OefsHDAEqUFPZCavvzy4mKqgDYuKYPG53aWHOIRkRE-mMfSBRrb-HYp--tjWvI75SWh5at3g2KWHn3NLUsXpE4kGXtG-FpVDSVUbJZv5
+      width: 4032
+    - !ruby/hash:Google::Maps::Result
+      height: 9000
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/112241358889580919541">吳聖臨</a>
+      photo_reference: AdDdOWo7AJOoYtHWTPydpL3ACwxmKYByjnu8FMYZdMV6CyVt2Lv6Fbynh3sQOyQHcoDA_vE0pS4ne6DNh6OKKSHYGoa5eiUeELKhTXvhdY-gfrYZqnBkJsbJE6NNUVLPVDlE6DDeHaNAx74dp6ocz4z8mNfBZ67GQuO0GZsEMcd0fSnqBYmI
+      width: 12000
+    - !ruby/hash:Google::Maps::Result
+      height: 2368
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/109493103775865848858">Li Brad</a>
+      photo_reference: AdDdOWr4toXEzwxwtoQ_qC6wsbDk272OpEuqPp7fEuENziNhqdbNrpZFJup2m0zuBH2vov-xJEnMk-U1eUKVLEwxZug6n61DUDN8DaazI2FQmEzmcL3QGnBYV8CqRVCDV57AQbISbKrqYHBxiyENKO5A4cQK8ogZj6pEujMvlKstSNH_R8J1
+      width: 4160
+    - !ruby/hash:Google::Maps::Result
+      height: 2160
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/107446349528354454434">Sandia
+        Hsiao</a>
+      photo_reference: AdDdOWr9WbvZhbugD1BxOJMWpq8xZva6pV2eyiBvOCcbMcUNmQu12J56aOsC8-4Jzp3UcCYUeXuL6_R64Q7miOGBZhleNmcgP2IVyNvlA8I85swHt8v045jVwj5R8XjjzC3vpgxXtthWhP7gvcHPrOyfHkGoIrr5PigZNYSRyxHHDf7k0XYQ
+      width: 3840
+    - !ruby/hash:Google::Maps::Result
+      height: 9000
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/112241358889580919541">吳聖臨</a>
+      photo_reference: AdDdOWpVwe7Kzc6Jshz4PyPnj9kVZ3F2yO0mIgq3iclmEwSLo5Po2UIv05hXVi0n6FDJrVofzI1PWfjg8xOLDUU2ODlI9_NkQK78hpzhNhMPF6q9H_hUw623awLlh3P9qSEtn9IPbIZCCohzacqbIDAvrz7f7h1iYhxnc7I7r0406oFaD_FL
+      width: 12000
+    - !ruby/hash:Google::Maps::Result
+      height: 3024
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/114222122076872669000">許小咕</a>
+      photo_reference: AdDdOWqT_UuFgEWMr3oYx2Vb1aUXa3L_C2I_3MvH3BNdYc_MG-sBhE5Bb3uHoeklT6Aa1nu-GE86EbNkZTk-nJ9KEQNsgTkxsbLTq7AXmEee1dIgTFn8SIBQO2gh9BM1GfGgXcayF_C93_w01uOgcIVcSgLogRyjsMAbSw6n-0oz7FPkozw
+      width: 4032
+    - !ruby/hash:Google::Maps::Result
+      height: 3024
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/110527189600758329952">Willy
+        Tsai</a>
+      photo_reference: AdDdOWqBleVvNRprbBbIHnbAv8VMBKZt8OxBe1VhgNsKT6TOQs_UAerqmFSw2WVLQLiyCSHVmVIpLakWYJM9Asv0CanO4NYacgLk2vGqQhf0BhzgVnjpVE-Iym7adBEWdBxfJtt2PANdIabavuvSeEl01k5YCbIlQG10LcAu0FY5FtSN56E
+      width: 4032
+    - !ruby/hash:Google::Maps::Result
+      height: 3024
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/116122825177465564344">bill
+        LAU</a>
+      photo_reference: AdDdOWp662bVkiE9owR4jBFL0Xmv12-jxEqLyqkWt7wolRxR1DLH0Stiqyzv3JAGwoYNnQtNKPJTRYrJLIynNIySvu1I5Z9NyN992HzO94_qwfM4ZBxW-aQRHXGX78Q_APNWB8R8Ne1qyS-PWAiDaG0wNCVGEPDg2BWujIwk48Tr-bJnf4-3
+      width: 4032
+    - !ruby/hash:Google::Maps::Result
+      height: 3492
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/101777567082744966974">walack
+        k</a>
+      photo_reference: AdDdOWqkot6gyQ6GVlid-vEu3PkvQ1M9xrqJMvIcjhqPB1aDVp0NhgoJe5j3KtdaY1ZyiJ7KaD238sBKxbDlt05FEVkzKlg7lM5hUQNDsumgdQ1AYp9Bg7zDK8SXLvnOLbQnKpk8US15DoxnVLXlPDJzqNKUzWa9erIXW-zYWik1x_HKV4sd
+      width: 4656
+    - !ruby/hash:Google::Maps::Result
+      height: 1536
+      html_attributions: !ruby/array:Hashie::Array
+      - <a href="https://maps.google.com/maps/contrib/107704839515614240820">Alvin
+        Loraez</a>
+      photo_reference: AdDdOWqghCIgsuzjwwFngSVLgLunnHzgnhanWRR5-kjBiy3M-XjigZ4kTuR2hEGWPGMulGLpDgQNc-kZhyGEB2Nvw8qc-02Igj17WbbWn_uZTxwzxZEmcxAEYLIDtLKHBcIOHyiwWkVQStu76LeXTeBfrU1KehZ03fdnB3jNXoMwd6OrlMU0
+      width: 2048
+    place_id: ChIJQyv318Q1aDQRYz_krC4mdb4
+    plus_code: !ruby/hash:Google::Maps::Result
+      compound_code: RX5G+W3 Taiwan, Hsinchu City, East District, 復中里
+      global_code: 7QP2RX5G+W3
+    rating: 4.4
+    reference: ChIJQyv318Q1aDQRYz_krC4mdb4
+    reviews: !ruby/array:Hashie::Array
+    - !ruby/hash:Google::Maps::Result
+      author_name: Joel Yeo
+      author_url: https://www.google.com/maps/contrib/110995419202509337797/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a/ACg8ocIcPcJrOVOh9zu7_sO64Xn5hZRdglxPP99fFaYhOvE5AOBlFg=s128-c0x00000000-cc-rp-mo-ba5
+      rating: 5
+      relative_time_description: a year ago
+      text: |-
+        Very big and spacious, and very comfortable to go about shopping compared to malls in Taipei. There are all ranges (price) of cloths, foods, ice cream and even some fun activities on the top floor to go about like dart, baseball, bowling, arcades.
+        Parking is not easy around here.
+        Environment is pretty good.
+      time: 1692832472
+      translated: false
+    - !ruby/hash:Google::Maps::Result
+      author_name: Harm van Leeuwen
+      author_url: https://www.google.com/maps/contrib/110616343443720843874/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a/ACg8ocL7MyhDx9x5aRbzeQS1dsOBsW-Osk13svg58OqHrmFXQM8bGQ=s128-c0x00000000-cc-rp-mo-ba3
+      rating: 5
+      relative_time_description: 3 months ago
+      text: I went there for the food court on 4th floor. Amazing amount of food stalls
+        at affordable price. Went there 2 days in a row. Picture is of day one. Second
+        at Hongkong restaurant. Must go there. Amazing food
+      time: 1725288204
+      translated: false
+    - !ruby/hash:Google::Maps::Result
+      author_name: Kevin Lim
+      author_url: https://www.google.com/maps/contrib/106673512036124640849/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjXEd3GByZ1a6QEwcQZ-FpvwXmoO8XHfyt5Yc3VFSrkyNZEj3QfL=s128-c0x00000000-cc-rp-mo-ba4
+      rating: 5
+      relative_time_description: a year ago
+      text: |-
+        Very Big Shopping Mall with a lot of stuff. Movie theater, Bowling Alley, Baseball Hall all include.
+        Lots of food to choose. I even brought a bag at porter Taiwan. Can spend 6 hour at the shopping mall. Overall 100% experience
+      time: 1685702959
+      translated: false
+    - !ruby/hash:Google::Maps::Result
+      author_name: Christopher Williams
+      author_url: https://www.google.com/maps/contrib/112170196457533955526/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjWstuQ-T-lotWbgE-gXjAyK8_WOZSkgWxVKLsnvjN5Ke46OWJk9=s128-c0x00000000-cc-rp-mo-ba2
+      rating: 4
+      relative_time_description: a week ago
+      text: It is always very busy on the weekends. It has a good food court, high-end
+        shops, and a very nice movie theater. There are also two grocery stores, but
+        the one that has western items is very very expensive.
+      time: 1732693453
+      translated: false
+    - !ruby/hash:Google::Maps::Result
+      author_name: Kokthye Lim
+      author_url: https://www.google.com/maps/contrib/106497119696593044976/reviews
+      language: en
+      original_language: en
+      profile_photo_url: https://lh3.googleusercontent.com/a/ACg8ocLgMl5jcDHHQQc7kWLqO8J28oEYOA0ktHslcAywmlxw2KvC8w=s128-c0x00000000-cc-rp-mo-ba6
+      rating: 5
+      relative_time_description: 10 months ago
+      text: |-
+        Should be the biggest Mall in the Hsinchu and at least one of the largest Mall in Taiwan.
+        It has everything.
+        2 supermarkets located at the basement.
+        Tom's world and cinema located at the top part of the Mall.
+        The foodcourts also sells a lot of variety of food.
+        I think it wil take at least 0.5 day to complete viewing the whole Mall
+      time: 1707668515
+      translated: false
+    types: !ruby/array:Hashie::Array
+    - shopping_mall
+    - department_store
+    - movie_theater
+    - store
+    - restaurant
+    - point_of_interest
+    - food
+    - establishment
+    url: https://maps.google.com/?cid=13723917421392445283
+    user_ratings_total: 43828
+    utc_offset: 480
+    vicinity: No. 229號, Zhongyang Road, East District
+    website: https://www.febigcity.com/bigcity
+    wheelchair_accessible_entrance: true
+options:
+  :language: :en
+  :mode: walking
+  :waypoints:
+  - !ruby/object:Google::Maps::PlaceDetails
+    data: !ruby/hash:Google::Maps::Result
+      address_components: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        long_name: '300'
+        short_name: '300'
+        types: !ruby/array:Hashie::Array
+        - subpremise
+      - !ruby/hash:Google::Maps::Result
+        long_name: 445號
+        short_name: 445號
+        types: !ruby/array:Hashie::Array
+        - street_number
+      - !ruby/hash:Google::Maps::Result
+        long_name: Section 2, Zhonghua Road
+        short_name: Section 2, Zhonghua Rd
+        types: !ruby/array:Hashie::Array
+        - route
+      - !ruby/hash:Google::Maps::Result
+        long_name: 榮光里
+        short_name: 榮光里
+        types: !ruby/array:Hashie::Array
+        - administrative_area_level_3
+        - political
+      - !ruby/hash:Google::Maps::Result
+        long_name: East District
+        short_name: East District
+        types: !ruby/array:Hashie::Array
+        - administrative_area_level_2
+        - political
+      - !ruby/hash:Google::Maps::Result
+        long_name: Hsinchu City
+        short_name: Hsinchu City
+        types: !ruby/array:Hashie::Array
+        - administrative_area_level_1
+        - political
+      - !ruby/hash:Google::Maps::Result
+        long_name: Taiwan
+        short_name: TW
+        types: !ruby/array:Hashie::Array
+        - country
+        - political
+      - !ruby/hash:Google::Maps::Result
+        long_name: '300'
+        short_name: '300'
+        types: !ruby/array:Hashie::Array
+        - postal_code
+      adr_address: 300<span class="street-address">No. 445號, Section 2, Zhonghua Rd,
+        榮光里</span> <span class="locality">East District</span>, <span class="region">Hsinchu
+        City</span>, <span class="country-name">Taiwan</span> <span class="postal-code">300</span>
+      business_status: OPERATIONAL
+      formatted_address: 300No. 445號, Section 2, Zhonghua Rd, East District, Hsinchu
+        City, Taiwan 300
+      formatted_phone_number: 03 523 7441
+      geometry: !ruby/hash:Google::Maps::Result
+        location: !ruby/hash:Google::Maps::Result
+          lat: 24.8015877
+          lng: 120.9715883
+        viewport: !ruby/hash:Google::Maps::Result
+          northeast: !ruby/hash:Google::Maps::Result
+            lat: 24.8030161802915
+            lng: 120.9728864302915
+          southwest: !ruby/hash:Google::Maps::Result
+            lat: 24.8003182197085
+            lng: 120.9701884697085
+      icon: https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/train-71.png
+      icon_background_color: "#10BDFF"
+      icon_mask_base_uri: https://maps.gstatic.com/mapfiles/place_api/icons/v2/train_rail_1_pinlet
+      international_phone_number: "+886 3 523 7441"
+      name: Hsinchu
+      photos: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        height: 9000
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/110134809333186675335">luxkey
+          hsieh</a>
+        photo_reference: AdDdOWqmZpZDkr4Kih3p9E6homvWczmBiAX7HqNtUKBBwN1wDbVY7Rv1zpLUqFDxfc2orW-XLj1pRRR-3R6XF40AUen8qrqTCtvhiT7ToCo0dLzXBYI8LGDdLM6YdIoqvRRla7RTY7_bLRlDOJ6KVu5UFnZLafmbPjAJLYYecCq7l9-ewuRy
+        width: 12000
+      - !ruby/hash:Google::Maps::Result
+        height: 2300
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/113632784701997039509">Rétty
+          Hsu</a>
+        photo_reference: AdDdOWprojfZI2nGUtcE53VOV0pKVhaHmq-6hR82MObRSutASVqtO5yAWBh3ivz6avXMS8JoWPens0P4E2C6J_Hr_My-WzTqOJfX7tl7XFxAsF9OyIIYZQbHe7u1xSY8B59CDlXPdqcpIpF_ykxWEDUXyqJ6oJ_X_zxKZnM2kshmxF1-Umt5
+        width: 3541
+      - !ruby/hash:Google::Maps::Result
+        height: 2048
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/102121336328024957770">Shelly
+          Chen</a>
+        photo_reference: AdDdOWpxf4kLKa0hqysY1ISitVwCl5xNwcwyXuUheVKp3dFsgS8PGECqZh7IWwTqIpbNtASB3ghUzDE8XQ1C7sYB77hp26Em-0rvON9MbCISdBiOH_R7TJ_UP1E56-dWb9w86HK-SPI-Eh053P7qzEdL3rpAyq_f5meguEQa64Mc8yukfy-h
+        width: 1537
+      - !ruby/hash:Google::Maps::Result
+        height: 3024
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/114222122076872669000">許小咕</a>
+        photo_reference: AdDdOWoZ1um4i72lQnkLfACWi-KFTHJUry95ey0jKokyDkT2yJNe2op7fUdQYDOc7KTPEUEB6GEr5urELa-lC5r41EuERERle5ufStyP4Rz-CTsHOhWad-N90xh_K1uQ6B2o6vMV0CWrLZpH44vJ9tmLOMdz9KYKFL-xi7qrbkc3_1gH3gE
+        width: 4032
+      - !ruby/hash:Google::Maps::Result
+        height: 3000
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/101315403553823471420">狐狸的不靠譜美食地圖</a>
+        photo_reference: AdDdOWqC1fBeogz-vLEfXnFxwxG1c91F32nbBquZ6kVpXmHVNR32hx7kTg-MVgX5g444nczw_SLQgt5APNzLnC3DIWvtzM6Z5OY4RlXRyg8TSdFyuNIJPrcj-sgUQ4zrX4rxBDb9vTPi88FczyghzrIig3424OwImwD87o0i4QJIQtHhwoOI
+        width: 4000
+      - !ruby/hash:Google::Maps::Result
+        height: 3024
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/107497516108894232765">藍秉宏</a>
+        photo_reference: AdDdOWp4MyVSObn0wwMfqqjVWnv9o8YALCYvnkTbOYrmiFDKy5PC3kUBTnNX1BK4Qxzol8XP0PK4FdkukBraOuXQEEPm1gkSovKqSnQAzS8TacPicCviTZJU6eBEdpGlsnL6iBDzDnEHkeSjAZNi6iS48n07_lFf6Q9grfux7WODvO5SOcMc
+        width: 4032
+      - !ruby/hash:Google::Maps::Result
+        height: 3024
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/115789556725317963247">黃翠文</a>
+        photo_reference: AdDdOWr3Gqv72SQYMmv9xaVcvzIjqni53qnvU5NiNzopjW1tLk1lSYy-WIJ9pBJBBCqq6jNCvIQFPFY7ILYCUT5k9f3sggdGAPnToEDqACq8mevFGN9i6OM3Ha0v2xEEhDmurTlnqp1cSQOWVaqoy0ogFd77yfFjg3yoBtm3hfEBICcKP7kt
+        width: 4032
+      - !ruby/hash:Google::Maps::Result
+        height: 4032
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/106978371834426632061">快樂無極</a>
+        photo_reference: AdDdOWoISBK72Bcz5ePW4JG7TPIOoTSBfBgzedj2jJQu1rmR2bKSv6MYYGtWVFSSMiHtyppR6Qe1JCTGO-udM81M8DZ08y8nAvFg_BZPSb1LdXMiPTKHF8z4mIzQHoll0z_KJztVU62WTxpUu4kFfq7e27Ma3_K_ocBaF8LplV8YkRkqmxCK
+        width: 3024
+      - !ruby/hash:Google::Maps::Result
+        height: 3472
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/106277092483777064171">高效率馬達聯盟HEMA</a>
+        photo_reference: AdDdOWoI2WlQrfwBWr8P8wciUz7k8woRZUdUZLtHnT1A8U9T36VJMliBZkkW6Lgf22NEO5dpo4eAUJ2Wi3czxh_nRYVzJ8xhFydJuifxaONqnv0UL3y5SjCCjZD9ulK3h21mF8-DDooisa8oj486l-g5WEjc9XzmpJgSxkzq75BqUdAxJxoS
+        width: 4640
+      - !ruby/hash:Google::Maps::Result
+        height: 1440
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/100871170944793980672">David
+          Wang</a>
+        photo_reference: AdDdOWo9Ojf5T9m6pn9_Mn-Qz8ihO_1NDdRG1mhYHelPCqJAqMzbtUtstpuRHvibfwEwdlwzojtiSCDkXAKBtwO5FZrOwHkvvLKEfQLym_Gu9pPHhRZBRuyEPRtCOblqKvN1bYPgSwYE_DgSR_I6Q0u910OfxMgRHETsAL5IL6Eln7Y7AWO7
+        width: 1440
+      place_id: ChIJBXLgwuk1aDQRuu4aKYS0jF4
+      plus_code: !ruby/hash:Google::Maps::Result
+        compound_code: RX2C+JJ Taiwan, Hsinchu City, East District, 榮光里
+        global_code: 7QP2RX2C+JJ
+      rating: 4.2
+      reference: ChIJBXLgwuk1aDQRuu4aKYS0jF4
+      reviews: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        author_name: Wai Leung Choi
+        author_url: https://www.google.com/maps/contrib/117333781456696433831/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a/ACg8ocLB-oQAigsdiJed7m31Gh-jiHolLfclVq41O12KWcLRJGLjQQ=s128-c0x00000000-cc-rp-mo-ba8
+        rating: 4
+        relative_time_description: a year ago
+        text: Hsinchu Railway station, a main railway station in Hsinchu, a busy station
+        time: 1698855109
+        translated: false
+      - !ruby/hash:Google::Maps::Result
+        author_name: 李好命
+        author_url: https://www.google.com/maps/contrib/116842344434887843262/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjUfSxr3qy2CYgCxn2yb3jBxtNGPbKrOxG0H2SmaOMbR3Fumbcut-w=s128-c0x00000000-cc-rp-mo-ba8
+        rating: 4
+        relative_time_description: 3 years ago
+        text: 'The Hsinchu Train Station.  A subway connects the front and the rear
+          stations. One can also access the subway at the Platform #5. Very convenient!'
+        time: 1630712000
+        translated: false
+      - !ruby/hash:Google::Maps::Result
+        author_name: celben balallo
+        author_url: https://www.google.com/maps/contrib/110453852587803021169/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjU_ozXeGFBz3u3_WqA1fUmeCXl-R0-qwvSGzvQ-XOVFx-keshpH=s128-c0x00000000-cc-rp-mo
+        rating: 4
+        relative_time_description: a year ago
+        text: the atmospher is strikingly pleasing that you'll always smile seeing
+          your love one arive at this kind of busy place
+        time: 1688219327
+        translated: false
+      - !ruby/hash:Google::Maps::Result
+        author_name: U. X.
+        author_url: https://www.google.com/maps/contrib/110688123631511398095/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjXEo5falrPpSCqUUDxqzwQFyNrYWPhitwggKnxSdDBcaHNII7O9tg=s128-c0x00000000-cc-rp-mo-ba8
+        rating: 4
+        relative_time_description: 7 years ago
+        text: The architecture is interesting to see built in Japan colonial period.
+          Trains to Liujia station is only 4 car,go slowly,making relax&forget our
+          busy days.
+        time: 1498984109
+        translated: false
+      - !ruby/hash:Google::Maps::Result
+        author_name: Sam Hendren
+        author_url: https://www.google.com/maps/contrib/104051948634883189140/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a/ACg8ocKQpHFZ7_dbjrk42Gx_eXnAaq0FLJkLQnTeIgCz8kCc4J_xzA=s128-c0x00000000-cc-rp-mo-ba2
+        rating: 4
+        relative_time_description: 3 months ago
+        text: Okay but doesn't have the same primal charm as the north station.
+        time: 1725543600
+        translated: false
+      types: !ruby/array:Hashie::Array
+      - train_station
+      - transit_station
+      - point_of_interest
+      - establishment
+      url: https://maps.google.com/?cid=6813018816023031482
+      user_ratings_total: 1868
+      utc_offset: 480
+      vicinity: 300, No. 445號, Section 2, Zhonghua Road, East District
+      website: http://www.railway.gov.tw/
+      wheelchair_accessible_entrance: true
+  - !ruby/object:Google::Maps::PlaceDetails
+    data: !ruby/hash:Google::Maps::Result
+      address_components: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        long_name: 66號
+        short_name: 66號
+        types: !ruby/array:Hashie::Array
+        - street_number
+      - !ruby/hash:Google::Maps::Result
+        long_name: 食品路
+        short_name: 食品路
+        types: !ruby/array:Hashie::Array
+        - route
+      - !ruby/hash:Google::Maps::Result
+        long_name: 公園里
+        short_name: 公園里
+        types: !ruby/array:Hashie::Array
+        - administrative_area_level_3
+        - political
+      - !ruby/hash:Google::Maps::Result
+        long_name: East District
+        short_name: East District
+        types: !ruby/array:Hashie::Array
+        - administrative_area_level_2
+        - political
+      - !ruby/hash:Google::Maps::Result
+        long_name: Hsinchu City
+        short_name: Hsinchu City
+        types: !ruby/array:Hashie::Array
+        - administrative_area_level_1
+        - political
+      - !ruby/hash:Google::Maps::Result
+        long_name: Taiwan
+        short_name: TW
+        types: !ruby/array:Hashie::Array
+        - country
+        - political
+      - !ruby/hash:Google::Maps::Result
+        long_name: '300'
+        short_name: '300'
+        types: !ruby/array:Hashie::Array
+        - postal_code
+      adr_address: <span class="postal-code">300</span>, <span class="country-name">Taiwan</span>,
+        <span class="region">Hsinchu City</span>, <span class="locality">East District</span>,
+        <span class="street-address">公園里食品路66號</span>
+      business_status: OPERATIONAL
+      current_opening_hours: !ruby/hash:Google::Maps::Result
+        open_now: false
+        periods: !ruby/array:Hashie::Array
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            date: '2024-12-08'
+            day: 0
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            date: '2024-12-08'
+            day: 0
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            date: '2024-12-10'
+            day: 2
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            date: '2024-12-10'
+            day: 2
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            date: '2024-12-11'
+            day: 3
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            date: '2024-12-11'
+            day: 3
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            date: '2024-12-12'
+            day: 4
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            date: '2024-12-12'
+            day: 4
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            date: '2024-12-13'
+            day: 5
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            date: '2024-12-13'
+            day: 5
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            date: '2024-12-14'
+            day: 6
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            date: '2024-12-14'
+            day: 6
+            time: '0900'
+        weekday_text: !ruby/array:Hashie::Array
+        - 'Monday: Closed'
+        - 'Tuesday: 9:00 AM – 5:00 PM'
+        - 'Wednesday: 9:00 AM – 5:00 PM'
+        - 'Thursday: 9:00 AM – 5:00 PM'
+        - 'Friday: 9:00 AM – 5:00 PM'
+        - 'Saturday: 9:00 AM – 5:00 PM'
+        - 'Sunday: 9:00 AM – 5:00 PM'
+      editorial_summary: !ruby/hash:Google::Maps::Result
+        language: en
+        overview: Small, established zoo with endangered species of Asia's tropical
+          rainforests, plus other animals.
+      formatted_address: 300, Taiwan, Hsinchu City, East District, 食品路66號
+      formatted_phone_number: 03 522 2194
+      geometry: !ruby/hash:Google::Maps::Result
+        location: !ruby/hash:Google::Maps::Result
+          lat: 24.8001567
+          lng: 120.9799245
+        viewport: !ruby/hash:Google::Maps::Result
+          northeast: !ruby/hash:Google::Maps::Result
+            lat: 24.8014355302915
+            lng: 120.9812168302915
+          southwest: !ruby/hash:Google::Maps::Result
+            lat: 24.7987375697085
+            lng: 120.9785188697085
+      icon: https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png
+      icon_background_color: "#4DB546"
+      icon_mask_base_uri: https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet
+      international_phone_number: "+886 3 522 2194"
+      name: Hsinchu Zoo
+      opening_hours: !ruby/hash:Google::Maps::Result
+        open_now: false
+        periods: !ruby/array:Hashie::Array
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            day: 0
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            day: 0
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            day: 2
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            day: 2
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            day: 3
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            day: 3
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            day: 4
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            day: 4
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            day: 5
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            day: 5
+            time: '0900'
+        - !ruby/hash:Google::Maps::Result
+          close: !ruby/hash:Google::Maps::Result
+            day: 6
+            time: '1700'
+          open: !ruby/hash:Google::Maps::Result
+            day: 6
+            time: '0900'
+        weekday_text: !ruby/array:Hashie::Array
+        - 'Monday: Closed'
+        - 'Tuesday: 9:00 AM – 5:00 PM'
+        - 'Wednesday: 9:00 AM – 5:00 PM'
+        - 'Thursday: 9:00 AM – 5:00 PM'
+        - 'Friday: 9:00 AM – 5:00 PM'
+        - 'Saturday: 9:00 AM – 5:00 PM'
+        - 'Sunday: 9:00 AM – 5:00 PM'
+      photos: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        height: 2250
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/118201593824584981981">吳俊明</a>
+        photo_reference: AdDdOWqgx3OE6-J15D3IKKx_oWYdu8KWIOMM7eZq2qB7lEzN0aKdgzMrwDVbEQNrqlGtC9SBy4jM3S0pf-7plGywba1vOnxKh46n6ZZJPGbjUcVwP4lci0AorONHH9B5zln5jspMqN-Pp9wcu3DbLtNbheXCfw3f-i1q90JBJDN15AH1EWxr
+        width: 4000
+      - !ruby/hash:Google::Maps::Result
+        height: 2268
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/116544292722758123500">Sunny
+          Chien</a>
+        photo_reference: AdDdOWr_NuUzacZ9VX7qkc-Lt_2Kc972rm5ZLZ_U5gGFXbUiHsww6ncxEw8yeIMBwI3YSNZwXSyAjXKK2i-iKrT3YvGinezzmxohEvO-zaQmbay8M9zrzQyEWM08apAq8Smxz8xmDhiKEj0peQ3xCqlxLKSlcV1kWibcoT3cKyKHVz_OiRtr
+        width: 4032
+      - !ruby/hash:Google::Maps::Result
+        height: 3072
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/117732413045006314746">Li-Hsin
+          Chen (Simba)</a>
+        photo_reference: AdDdOWqmRo1m0zPUjlGCrf8uc5qZ40rHy_8Z0uJh6PZ3qSoHBIjozWNbVZoH1LSLhC3Lcp27ZNwPvs6TU7FqTyJfpdjvbbtLF1MbClKDXMQBS-yjBdshOMtCstmemThwXNkq2h1HzRm-nkRI44i2NfoqRGbf-zHcYNCemDtxGkI7juhsyMbx
+        width: 4080
+      - !ruby/hash:Google::Maps::Result
+        height: 3024
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/108107057999873015141">向日葵</a>
+        photo_reference: AdDdOWqgdzomzI67hN-W-8KKhXpewv3Ujr2O0trP0SX2hiXtkpLZD-VXJN3fookFMLn9F3uGJqR6dASTYjzP_sO7P1uqrev87j1VW2F_aTyMnRlvUCaP5Zbor77yBtqIw8q899pmsnLDOi5I1MsD_s3xoq-z1_0mli20qzY5q_N_hb5lTSn_
+        width: 4032
+      - !ruby/hash:Google::Maps::Result
+        height: 3648
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/116212234892819279181">Mills
+          Lin</a>
+        photo_reference: AdDdOWo7or0lJPWr7vGB7x_1Q1NHjvC-a5i1oygE6ItYR9FIj_JMNUAdljQNtbL2B1xQhOc1RQA1KAfOgmrgun1hOmKO8vFfKcxmytqcPThB44gNW_BknJ6MdhKgLSJ-dikvU-jwDZICnsvUmHNmimf3rur2vUzRkos253hOgYcIqbJx_D0P
+        width: 5472
+      - !ruby/hash:Google::Maps::Result
+        height: 3024
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/103124357259431580541">AMY
+          HUNG</a>
+        photo_reference: AdDdOWoPT72gg0qOoI2B3xTlgKwgBZQIszNz5s1qdJ8oe0OS8cY4EpDFh3P8nxgMOtdSggW5wzmkXR0ffpry4R3KOc1-9jMsnrYW0KrN7JqLVrMHUnisTOuBzbA4KPUgv918W5MN2ScGpw9SnhcoEj86e-wLpMhEjRuZ92U9kBfscWiSZgzv
+        width: 4032
+      - !ruby/hash:Google::Maps::Result
+        height: 3024
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/100511799103235748606">Y C</a>
+        photo_reference: AdDdOWrLmeHbMK1brlWxCbyFo5MYbtykBPNiZaZYLNT6e2Cr4_vJdcl_nqJ96Vhq1KD-vm5jFnS5C351XP2KzFyObYy5DGn3RMXDcvtG0ry4WObN6MOqworFGwJpcYW797Cpeg1hSaNRnXngSbTlZGkJJZLUv3TmSPdWAXtNqD9c8Zcw5Vp1
+        width: 3024
+      - !ruby/hash:Google::Maps::Result
+        height: 3024
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/116051465827533154690">Pang-Hung
+          Liu</a>
+        photo_reference: AdDdOWpwUbmPbjqX5rRdEZIFYcYKh_vvzbhtJ2JQ5d0SBNvQ-zQMWRcufC1sVNJm-Q2mrG190j5j-YscuODy2kuNeYSMGfjbBF_qM-Bpt09QbJCfot2syLhYWAe4NlF-FGsrOeEkZYWE7ejzh4qjV6BasbH5Nretw1m2iMGWNmiARolizgQ5
+        width: 4032
+      - !ruby/hash:Google::Maps::Result
+        height: 1080
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/110428471622361958184">寸踳枸</a>
+        photo_reference: AdDdOWqP7xDjp8ACEDy8GkIdZmHE470xDnqbosznTCQwepcJy7IWXBeTL4-tpy4yfp5t-mBabGdjmSgjTj_3ujs432YS1WJ_VZuLnLxAyv0AT0mh1LzY0eUBR_eZDBgfb8wvzAF1V_w9n3Z40SCEh5N4_Zx5ThwL1ViUjOTYyn20HE-OKP9L
+        width: 1616
+      - !ruby/hash:Google::Maps::Result
+        height: 3024
+        html_attributions: !ruby/array:Hashie::Array
+        - <a href="https://maps.google.com/maps/contrib/115641382023736266827">智鈞（michael31208）</a>
+        photo_reference: AdDdOWo3NaHL5bf2j-FpLebL32g-8ClWVRlu6e16Bul4c1QPyNO1uao1cqEofih-X-7jwFjPD7wgcw6J9vLtAu-vqlkj5BFb3YzG2selt-9gHjsWFLXpH2nbCMq6MNlUyeplkFhu00XntjDyf1NMgL830g4-H6pMETkCERXmKS5JEPdzhb4M
+        width: 4032
+      place_id: ChIJl78Wnt01aDQRz1shOsBVUGU
+      plus_code: !ruby/hash:Google::Maps::Result
+        compound_code: RX2H+3X Taiwan, Hsinchu City, East District, 公園里
+        global_code: 7QP2RX2H+3X
+      rating: 4
+      reference: ChIJl78Wnt01aDQRz1shOsBVUGU
+      reviews: !ruby/array:Hashie::Array
+      - !ruby/hash:Google::Maps::Result
+        author_name: Jel
+        author_url: https://www.google.com/maps/contrib/109708415369518152650/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjXlL3rfQE08TWttiqqcWVj0abZbgh1Mc3zktixeUFIfo6_LOYY-2A=s128-c0x00000000-cc-rp-mo-ba5
+        rating: 5
+        relative_time_description: 2 months ago
+        text: "Hsinchu Zoo is clean.\nYou can spend like 20 to 30 minutes to enjoy
+          the view and check all the animals around the zoo.\nAlso, the huge tress
+          are beautiful\U0001F929.\nA good place to visit while you are at Hsinchu."
+        time: 1727621984
+        translated: false
+      - !ruby/hash:Google::Maps::Result
+        author_name: Hikari Shareen
+        author_url: https://www.google.com/maps/contrib/107194122627389572943/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjVt9HnFEekwUHAA16E0LwwEsgN3jKKGWULWqyqbREc7MOgmpII=s128-c0x00000000-cc-rp-mo-ba4
+        rating: 5
+        relative_time_description: a month ago
+        text: It's a mini scale zoo (ticket price 50 NTD), buy from the machine, only
+          short queue.  A pretty good place to visit alone, with friends or with family.
+          It's located in a park, so after visiting the zoo, you can take a walk in
+          the park and especially in weekend they have some kind of day market sells
+          foods drinks and plants too (dunno only in weekend or everyday)!
+        time: 1729754131
+        translated: false
+      - !ruby/hash:Google::Maps::Result
+        author_name: Wai Leung Choi
+        author_url: https://www.google.com/maps/contrib/117333781456696433831/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a/ACg8ocLB-oQAigsdiJed7m31Gh-jiHolLfclVq41O12KWcLRJGLjQQ=s128-c0x00000000-cc-rp-mo-ba8
+        rating: 3
+        relative_time_description: a year ago
+        text: |-
+          A zoo in Hsinchu, a small scale zoo only. Not too far away from the railway station, about 10 minutes walk from the station.
+          Spending about an hour in the zoo is more than enough. The animals inside seems not very active and some of them looks quite old.
+          The entry fee is not expensive, it cost around NTWD$45 for an adult ticket while buy it in apps.
+        time: 1699200456
+        translated: false
+      - !ruby/hash:Google::Maps::Result
+        author_name: Punky Oliverio
+        author_url: https://www.google.com/maps/contrib/109926133878847817808/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjWO6-Y4Cj7TU6c0oj6rltI2dyQnGxbs1qefVpjLsi-XxcUPbWv6=s128-c0x00000000-cc-rp-mo-ba4
+        rating: 5
+        relative_time_description: 2 years ago
+        text: I know zoos are not the holiest of places. This zoo, however,  is well
+          maintained, the animals have decent amounts of space,  they look healthy,  and
+          most of them are in numbers and do not live in isolation. It is a good place
+          to spend half a day on a weekend to be with family or friends. It is very
+          convenient and friendly for people's different needs. It may be a small
+          zoo but it is good fun. It is super affordable (50 dollars) and convenient
+          (pay through Easy Card) too.
+        time: 1661204145
+        translated: false
+      - !ruby/hash:Google::Maps::Result
+        author_name: Ally Lin
+        author_url: https://www.google.com/maps/contrib/105781244839793623296/reviews
+        language: en
+        original_language: en
+        profile_photo_url: https://lh3.googleusercontent.com/a-/ALV-UjXNsQP0kMzFMYcntBSyCPDyMaU5v-okPO29OnB0iqfpyFMgSmAYrQ=s128-c0x00000000-cc-rp-mo-ba6
+        rating: 3
+        relative_time_description: 9 months ago
+        text: |-
+          There is not much here. The living environment doesn't seem that great for the animals. There aren't many animals either. But remember it is government-run. On the plus side, I was able to buy a cheap Formosan black bear wallet at the gift shop.
+
+          It's something to do when you are already in the area. I came here after running at the Hsinchu County stadium to walk it off. Then, I went to the Flower market beside it.
+        time: 1708402251
+        translated: false
+      types: !ruby/array:Hashie::Array
+      - zoo
+      - tourist_attraction
+      - point_of_interest
+      - establishment
+      url: https://maps.google.com/?cid=7300429280064920527
+      user_ratings_total: 18980
+      utc_offset: 480
+      vicinity: No. 66號, 食品路, East District
+      website: https://zoo-info.hccg.gov.tw/
+      wheelchair_accessible_entrance: true
+  :optimizeWaypoints: true
+route: !ruby/hash:Google::Maps::Result
+  bounds: !ruby/hash:Google::Maps::Result
+    northeast: !ruby/hash:Google::Maps::Result
+      lat: 24.809036
+      lng: 120.9957982
+    southwest: !ruby/hash:Google::Maps::Result
+      lat: 24.7958444
+      lng: 120.9715729
+  copyrights: Map data ©2024 Google
+  legs: !ruby/array:Hashie::Array
+  - !ruby/hash:Google::Maps::Result
+    distance: !ruby/hash:Google::Maps::Result
+      text: 3.0 km
+      value: 2994
+    duration: !ruby/hash:Google::Maps::Result
+      text: 40 mins
+      value: 2423
+    end_address: 300no, No. 445, Section 2, Zhonghua Rd, East District, Hsinchu City,
+      Taiwan 300
+    end_location: !ruby/hash:Google::Maps::Result
+      lat: 24.8018022
+      lng: 120.9715774
+    start_address: No. 101, Section 2, Guangfu Rd, East District, Hsinchu City, Taiwan
+      300
+    start_location: !ruby/hash:Google::Maps::Result
+      lat: 24.7958776
+      lng: 120.9948474
+    steps: !ruby/array:Hashie::Array
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 6 m
+        value: 6
+      duration: !ruby/hash:Google::Maps::Result
+        text: 1 min
+        value: 4
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.7958444
+        lng: 120.9948929
+      html_instructions: Head <b>southeast</b>
+      polyline: !ruby/hash:Google::Maps::Result
+        points: g}ivCyxnaVFG
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.7958776
+        lng: 120.9948474
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 0.1 km
+        value: 137
+      duration: !ruby/hash:Google::Maps::Result
+        text: 2 mins
+        value: 108
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.7967171
+        lng: 120.9957982
+      html_instructions: Turn <b>left</b>
+      maneuver: turn-left
+      polyline: !ruby/hash:Google::Maps::Result
+        points: _}ivCaynaVYWg@a@EECEAG?A?AAEAC?EAC?CACAC]USOMIQOEC
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.7958444
+        lng: 120.9948929
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 54 m
+        value: 54
+      duration: !ruby/hash:Google::Maps::Result
+        text: 1 min
+        value: 40
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.7970199
+        lng: 120.9953786
+      html_instructions: Turn <b>left</b> toward <b>光復路二段</b>/<wbr/><b>南清公路</b>/<wbr/><b>117縣道</b>/<wbr/><b>122縣道</b>
+      maneuver: turn-left
+      polyline: !ruby/hash:Google::Maps::Result
+        points: objvCw~naVs@jAGF
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.7967171
+        lng: 120.9957982
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 72 m
+        value: 72
+      duration: !ruby/hash:Google::Maps::Result
+        text: 1 min
+        value: 50
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.7975673
+        lng: 120.9957477
+      html_instructions: Turn <b>right</b> toward <b>光復路二段</b>/<wbr/><b>南清公路</b>/<wbr/><b>117縣道</b>/<wbr/><b>122縣道</b>
+      maneuver: turn-right
+      polyline: !ruby/hash:Google::Maps::Result
+        points: kdjvCc|naVQK_@QMIOOEECCGCKC
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.7970199
+        lng: 120.9953786
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 1.8 km
+        value: 1848
+      duration: !ruby/hash:Google::Maps::Result
+        text: 25 mins
+        value: 1483
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8034365
+        lng: 120.9787334
+      html_instructions: Turn <b>left</b> onto <b>光復路二段</b>/<wbr/><b>南清公路</b>/<wbr/><b>117縣道</b>/<wbr/><b>122縣道</b><div
+        style="font-size:0.9em">Continue to follow 光復路二段/<wbr/>117縣道</div>
+      maneuver: turn-left
+      polyline: !ruby/hash:Google::Maps::Result
+        points: ygjvCm~naVUh@gDbG[l@[t@O`@Mj@Mp@YzAOn@_BfHU|@aAbE_@~ASz@e@nBqAtF]|AS`Ak@fC_@dBO\?H?HAHAHWhAw@nDGXMj@CNCFI`@c@pBg@tBaBtHEt@EV[lDEX
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.7975673
+        lng: 120.9957477
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 0.4 km
+        value: 397
+      duration: !ruby/hash:Google::Maps::Result
+        text: 5 mins
+        value: 322
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8043408
+        lng: 120.9753293
+      html_instructions: Continue onto <b>花園街</b>
+      polyline: !ruby/hash:Google::Maps::Result
+        points: olkvCatkaVY|COhBWzBLT@B_@RULGFy@l@DLDHBF@@DFFN?H?DC`@GBCBAFCLSf@
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8034365
+        lng: 120.9787334
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 0.4 km
+        value: 442
+      duration: !ruby/hash:Google::Maps::Result
+        text: 6 mins
+        value: 380
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8020798
+        lng: 120.9717329
+      html_instructions: Turn <b>left</b> onto <b>中華路二段</b>/<wbr/><b>市6鄉道</b>
+      maneuver: turn-left
+      polyline: !ruby/hash:Google::Maps::Result
+        points: crkvCy~jaVXj@HPFJ@@HLBF@F@DXd@vAhCr@nAjE`IP\
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8043408
+        lng: 120.9753293
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 38 m
+        value: 38
+      duration: !ruby/hash:Google::Maps::Result
+        text: 1 min
+        value: 36
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8018022
+        lng: 120.9715774
+      html_instructions: Turn <b>left</b><div style="font-size:0.9em">Destination
+        will be on the left</div>
+      maneuver: turn-left
+      polyline: !ruby/hash:Google::Maps::Result
+        points: _dkvCihjaVRAF?B@@@DDBBJP
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8020798
+        lng: 120.9717329
+      travel_mode: WALKING
+    traffic_speed_entry: !ruby/array:Hashie::Array []
+    via_waypoint: !ruby/array:Hashie::Array []
+  - !ruby/hash:Google::Maps::Result
+    distance: !ruby/hash:Google::Maps::Result
+      text: 1.1 km
+      value: 1091
+    duration: !ruby/hash:Google::Maps::Result
+      text: 16 mins
+      value: 944
+    end_address: No. 229, Zhongyang Rd, East District, Hsinchu City, Taiwan 300
+    end_location: !ruby/hash:Google::Maps::Result
+      lat: 24.809036
+      lng: 120.9748998
+    start_address: 300no, No. 445, Section 2, Zhonghua Rd, East District, Hsinchu
+      City, Taiwan 300
+    start_location: !ruby/hash:Google::Maps::Result
+      lat: 24.8018022
+      lng: 120.9715774
+    steps: !ruby/array:Hashie::Array
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 38 m
+        value: 38
+      duration: !ruby/hash:Google::Maps::Result
+        text: 1 min
+        value: 30
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8020798
+        lng: 120.9717329
+      html_instructions: Head <b>northeast</b> toward <b>中華路二段</b>/<wbr/><b>市6鄉道</b>
+      polyline: !ruby/hash:Google::Maps::Result
+        points: gbkvCkgjaVKQCCEEAACAG?S@
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8018022
+        lng: 120.9715774
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 32 m
+        value: 32
+      duration: !ruby/hash:Google::Maps::Result
+        text: 1 min
+        value: 35
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8023235
+        lng: 120.9715729
+      html_instructions: Slight <b>left</b> onto <b>中正路</b>
+      maneuver: turn-slight-left
+      polyline: !ruby/hash:Google::Maps::Result
+        points: _dkvCihjaVo@^
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8020798
+        lng: 120.9717329
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 0.7 km
+        value: 723
+      duration: !ruby/hash:Google::Maps::Result
+        text: 10 mins
+        value: 618
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8070492
+        lng: 120.9758667
+      html_instructions: Turn <b>right</b> onto <b>民族路</b><div style="font-size:0.9em">Pass
+        by 新竹市東區衛生所 (on the right in 450m)</div>
+      maneuver: turn-right
+      polyline: !ruby/hash:Google::Maps::Result
+        points: oekvCigjaVw@S{@QmBa@mCi@{AS_@IO[y@}AsBmDWe@iCwEcAmBa@w@
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8023235
+        lng: 120.9715729
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 0.2 km
+        value: 248
+      duration: !ruby/hash:Google::Maps::Result
+        text: 4 mins
+        value: 214
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8088583
+        lng: 120.9744435
+      html_instructions: Turn <b>left</b> onto <b>民權路</b>
+      maneuver: turn-left
+      polyline: !ruby/hash:Google::Maps::Result
+        points: aclvCebkaVeAp@g@\k@`@QLk@j@KFSPOLIFwA`A
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8070492
+        lng: 120.9758667
+      travel_mode: WALKING
+    - !ruby/hash:Google::Maps::Result
+      distance: !ruby/hash:Google::Maps::Result
+        text: 50 m
+        value: 50
+      duration: !ruby/hash:Google::Maps::Result
+        text: 1 min
+        value: 47
+      end_location: !ruby/hash:Google::Maps::Result
+        lat: 24.809036
+        lng: 120.9748998
+      html_instructions: Turn <b>right</b> onto <b>中央路</b><div style="font-size:0.9em">Destination
+        will be on the left</div>
+      maneuver: turn-right
+      polyline: !ruby/hash:Google::Maps::Result
+        points: knlvCgyjaVMa@Mc@GU
+      start_location: !ruby/hash:Google::Maps::Result
+        lat: 24.8088583
+        lng: 120.9744435
+      travel_mode: WALKING
+    traffic_speed_entry: !ruby/array:Hashie::Array []
+    via_waypoint: !ruby/array:Hashie::Array []
+  overview_polyline: !ruby/hash:Google::Maps::Result
+    points: g}ivCyxnaVFGYWm@g@EQESAG_@Yy@m@{@rAq@]g@c@SG}DlHw@bBO`@Mj@g@lCoBvIkC|KwBdJq@~CkAlFOf@ARYrAqAdGyApGaBtHEt@a@dEgA|KNXu@`@aAt@JVR`@?NC`@GBCBETSf@Xj@P\JNDNfDdG|E~IZANLJPKQIIEC[@o@^w@SiDs@mCi@{AS_@IO[mDkGaD}FeBeDmBnA}@n@w@r@c@^aBhAc@{A
+  summary: 光復路二段/117縣道
+  warnings: !ruby/array:Hashie::Array
+  - Walking directions are in beta. Use caution – This route may be missing sidewalks
+    or pedestrian paths.
+  waypoint_order: !ruby/array:Hashie::Array
+  - 0
