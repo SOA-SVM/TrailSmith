@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 require_relative 'spec_helper_openai'
-require_relative 'lib/openai_api'
+require_relative 'lib/gateways/openai_api'
+require_relative 'lib/mappers/openai_mapper'
+require_relative 'lib/entities/wish'
 require 'irb'
 
 describe 'Test OpenAI API liabrary' do
@@ -26,15 +28,15 @@ describe 'Test OpenAI API liabrary' do
   describe 'OpenAI Information' do
     it 'HAPPY: should provide a successful response from the API' do
       # binding.irb
-      response = TrailSmith::OpenaiAPI.new(OPENAI_TOKEN).generate_text(QUESTION)
+      response = TrailSmith::Openai::OpenaiAPI.new(OPENAI_TOKEN).generate_text(QUESTION)
       # binding.irb
       _(response.messages.first['content']).must_include EXPECTED_RESPONSE
     end
 
     it 'SAD: should gracefully handle an invalid API token' do
       _(proc do
-        TrailSmith::OpenaiAPI.new('BAD_TOKEN').generate_text(QUESTION)
-      end).must_raise TrailSmith::Response::Unauthorized
+        TrailSmith::Openai::OpenaiAPI.new('BAD_TOKEN').generate_text(QUESTION)
+      end).must_raise TrailSmith::Openai::OpenaiAPI::Response::Unauthorized
     end
   end
 end
