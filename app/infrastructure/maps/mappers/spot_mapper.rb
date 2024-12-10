@@ -1,7 +1,7 @@
 # frozen_string_literal: false
 
 module TrailSmith
-  module GoogleMaps
+  module GoogleMaps # rubocop:disable Style/Documentation
     # build spot entity
     class SpotMapper
       def initialize(key)
@@ -17,26 +17,18 @@ module TrailSmith
           name: spot['displayName']['text'],
           rating: spot['rating'],
           rating_count: spot['userRatingCount'],
-          reports: Reports.new(spot['reviews']).build_entity
+          reports: build_report_array(spot['reviews'])
         )
       end
     end
 
-    # build report entity
-    class Reports
-      def initialize(reports)
-        @reports = reports
-      end
-
-      def build_entity
-        report_array = @reports.map do |report|
-          Entity::Report.new(
-            publish_time: report['publishTime'],
-            rating: report['rating'].to_f,
-            text: report['originalText']['text']
-          )
-        end
-        Entity::Reports.new(report_array: report_array)
+    def build_report_array(report_array)
+      report_array.map do |report|
+        Entity::Report.new(
+          publish_time: report['publishTime'],
+          rating: report['rating'].to_f,
+          text: report['originalText']['text']
+        )
       end
     end
   end

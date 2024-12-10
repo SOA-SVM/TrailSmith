@@ -25,9 +25,9 @@ describe 'Tests Google Maps API' do
       # check Reports Entity
       (0..4).each do |i|
         # check Report Entity
-        _(spot.reports.report_array[i].publish_time).must_equal MAP_CORRECT[:reports][i][:publish_time]
-        _(spot.reports.report_array[i].rating).must_equal MAP_CORRECT[:reports][i][:rating]
-        _(spot.reports.report_array[i].text).must_equal MAP_CORRECT[:reports][i][:text]
+        _(spot.reports[i].publish_time).must_equal MAP_CORRECT[:reports][i][:publish_time]
+        _(spot.reports[i].rating).must_equal MAP_CORRECT[:reports][i][:rating]
+        _(spot.reports[i].text).must_equal MAP_CORRECT[:reports][i][:text]
       end
     end
 

@@ -3,6 +3,7 @@
 require 'dry-types'
 require 'dry-struct'
 require_relative 'spot'
+require_relative '../values/way'
 
 module TrailSmith
   module Entity
@@ -12,7 +13,7 @@ module TrailSmith
 
       attribute :id,         Integer.optional
       attribute :spots,      Strict::Array.of(Spot)
-      # attribute :travelling, Strict::Array.of(Travel)
+      attribute :travelling, Strict::Array.of(Value::Way)
       attribute :region,     Strict::String
       attribute :num_people, Strict::Integer
       attribute :day,        Strict::Integer
