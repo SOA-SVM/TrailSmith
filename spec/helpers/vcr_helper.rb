@@ -39,10 +39,7 @@ module VcrHelper
     end
 
     VCR.insert_cassette(
-      LOCATION_CASSETTE,
-      record: recording,
-      match_requests_on: %i[method uri headers],
-      allow_playback_repeats: true
+      LOCATION_CASSETTE, record: recording, match_requests_on: %i[method uri headers], allow_playback_repeats: true
     )
   end
 

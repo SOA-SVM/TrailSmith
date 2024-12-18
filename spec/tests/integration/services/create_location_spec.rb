@@ -27,16 +27,9 @@ describe 'CreateLocation Service Integration Test' do
       # WHEN: request to create a location plan
       result = TrailSmith::Service::CreateLocation.new.call(validate_input)
 
-      # Print debug information
-      puts "\nDebug Output:"
-      puts "Result success?: #{result.success?}"
-      if result.failure?
-        puts "Failure message: #{result.failure}"
-      end
-
       # THEN: should create and return the plan
       _(result.success?).must_equal true
-      
+
       if result.success?
         plan = result.value!
         _(plan).must_be_kind_of TrailSmith::Entity::Plan
