@@ -8,7 +8,7 @@ describe 'CreateLocation Service Integration Test' do
   VcrHelper.setup_vcr
 
   before do
-    VcrHelper.configure_vcr_for_map
+    VcrHelper.configure_vcr_for_location
   end
 
   after do
