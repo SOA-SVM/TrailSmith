@@ -76,13 +76,18 @@ module TrailSmith
 
           # GET /plan/[plan_id]
           routing.get do
-            result = Service::FindPlan.new.call(plan_id)
+            session[:watching] ||= []
+
+            result = Service::FindPlan.new.call(
+              watched_list: session[:watching],
+              requested: plan_id.to_i
+            )
 
             if result.failure?
               flash[:error] = result.failure
               routing.redirect '/'
             else
-              plan = result.value!
+              plan = result.value![:plan]
               viewable_plan = Views::PlanView.new(plan)
               viewable_map = Views::Map.new(plan)
             end

@@ -1,18 +1,35 @@
 #  frozen_string_literal: true
 
-require 'dry/monads'
+require 'dry/transaction'
 
 module TrailSmith
   module Service
     # Service to find a specific plan
     class FindPlan
-      include Dry::Monads::Result::Mixin
+      include Dry::Transaction
 
-      def call(plan_id)
-        plan = Repository::For.klass(Entity::Plan).find_id(plan_id)
-        plan ? Success(plan) : Failure('Could not find the plan.')
+      step :ensure_watched_plan
+      step :find_plan
+
+      private
+
+      # Steps
+
+      def ensure_watched_plan(input)
+        if input[:watched_list].include? input[:requested]
+          Success(input)
+        else
+          Failure('Please first request this plan to be added to your list')
+        end
+      end
+
+      def find_plan(input)
+        input[:plan] = Repository::For.klass(Entity::Plan)
+          .find_id(input[:requested])
+
+        input[:plan] ? Success(input) : Failure('Plan not found')
       rescue StandardError
-        Failure('Could not access database')
+        Failure('Having trouble accessing the database')
       end
     end
   end
