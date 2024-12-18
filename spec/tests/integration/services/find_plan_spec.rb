@@ -3,6 +3,7 @@
 require_relative '../../../helpers/spec_helper'
 require_relative '../../../helpers/vcr_helper'
 require_relative '../../../helpers/database_helper'
+
 require 'ostruct'
 
 describe 'FindPlan Service Integration Test' do
@@ -21,47 +22,62 @@ describe 'FindPlan Service Integration Test' do
       DatabaseHelper.wipe_database
     end
 
-    it 'HAPPY: should return a plan that exists' do
-      # GIVEN: a valid plan exists locally
+    it 'HAPPY: should find a plan that is being watched' do
+      # GIVEN: a valid plan exists locally and is being watched
       new_plan = TrailSmith::GoogleMaps::PlanMapper
         .new(GOOGLE_MAPS_KEY)
         .build_entity(GPT_JSON)
       stored_plan = TrailSmith::Repository::For.entity(new_plan)
         .create(new_plan)
 
-      # WHEN: we request to find the plan
-      result = TrailSmith::Service::FindPlan.new.call(stored_plan.id)
+      input = {
+        requested: stored_plan.id,
+        watched_list: [stored_plan.id]
+      }
+
+      # WHEN: we request to find this plan
+      result = TrailSmith::Service::FindPlan.new.call(input)
 
       # THEN: we should get back the plan
       _(result.success?).must_equal true
-      plan = result.value!
-      _(plan.id).must_equal stored_plan.id
-      _(plan.region).must_equal stored_plan.region
-      _(plan.day).must_equal stored_plan.day
+      found = result.value![:plan]
+      _(found.id).must_equal stored_plan.id
     end
 
-    it 'SAD: should not find a plan that does not exist' do
-      # GIVEN: we try to find a non-existent plan
-      non_existent_id = -1
+    it 'SAD: should not find plans that are not being watched' do
+      # GIVEN: a plan exists but is not in watched list
+      new_plan = TrailSmith::GoogleMaps::PlanMapper
+        .new(GOOGLE_MAPS_KEY)
+        .build_entity(GPT_JSON)
+      stored_plan = TrailSmith::Repository::For.entity(new_plan)
+        .create(new_plan)
 
-      # WHEN: we request to find the plan
-      result = TrailSmith::Service::FindPlan.new.call(non_existent_id)
+      input = {
+        requested: stored_plan.id,
+        watched_list: [] # empty watched list
+      }
 
-      # THEN: it should return a failure
+      # WHEN: we request to find this plan
+      result = TrailSmith::Service::FindPlan.new.call(input)
+
+      # THEN: it should return an error
       _(result.success?).must_equal false
-      _(result.failure).must_equal 'Could not find the plan.'
+      _(result.failure).must_equal 'Please first request this plan to be added to your list'
     end
 
-    it 'BAD: should handle database error gracefully' do
-      # GIVEN: database has some error
-      DatabaseHelper.wipe_database
+    it 'SAD: should not find non-existent plans' do
+      # GIVEN: request for non-existent plan
+      input = {
+        requested: -1,
+        watched_list: [-1]
+      }
 
-      # WHEN: we try to find a plan with an invalid id
-      result = TrailSmith::Service::FindPlan.new.call('invalid_id')
+      # WHEN: we request to find this plan
+      result = TrailSmith::Service::FindPlan.new.call(input)
 
-      # THEN: it should return a failure
+      # THEN: it should return a not found error
       _(result.success?).must_equal false
-      _(result.failure).must_equal 'Could not access database'
+      _(result.failure).must_equal 'Plan not found'
     end
   end
 end

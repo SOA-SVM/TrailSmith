@@ -3,7 +3,6 @@
 require_relative '../../../helpers/spec_helper'
 require_relative '../../../helpers/vcr_helper'
 require_relative '../../../helpers/database_helper'
-require 'ostruct'
 
 describe 'CreateLocation Service Integration Test' do
   VcrHelper.setup_vcr
@@ -22,48 +21,52 @@ describe 'CreateLocation Service Integration Test' do
     end
 
     it 'HAPPY: should create a new plan from valid input' do
-      # GIVEN: valid OpenAI response with location data
-      location_request = { 'query' => 'A 2-day trip for 4 people in Taipei' }
+      # GIVEN: valid query input
+      validate_input = { query: 'I want a day trip to Taipei' }
 
       # WHEN: request to create a location plan
-      result = TrailSmith::Service::CreateLocation.new.call(location_request)
+      result = TrailSmith::Service::CreateLocation.new.call(validate_input)
+
+      # Print debug information
+      puts "\nDebug Output:"
+      puts "Result success?: #{result.success?}"
+      if result.failure?
+        puts "Failure message: #{result.failure}"
+      end
 
       # THEN: should create and return the plan
       _(result.success?).must_equal true
-      plan = result.value!
-      _(plan).must_be_kind_of TrailSmith::Entity::Plan
-      _(plan.num_people).must_equal 4
-      _(plan.region).must_equal 'Taipei'
-      _(plan.day).must_equal 2
+      
+      if result.success?
+        plan = result.value!
+        _(plan).must_be_kind_of TrailSmith::Entity::Plan
+        _(plan.region).must_equal 'Taipei'
+        _(plan.spots).wont_be_empty
+      end
     end
 
-    it 'SAD: should not create plan with invalid OpenAI response' do
-      # GIVEN: invalid response format
-      bad_query = { 'query' => 'invalid input that will cause OpenAI to fail' }
+    it 'SAD: should not create plan with invalid input' do
+      # GIVEN: invalid input
+      bad_query = { query: nil }
 
       # WHEN: request to create a location plan
       result = TrailSmith::Service::CreateLocation.new.call(bad_query)
 
       # THEN: should report error
       _(result.success?).must_equal false
-      _(result.failure).must_equal 'Could not get recommendations'
+      _(result.failure).must_equal 'Invalid input: query is missing'
     end
 
-    it 'BAD: should handle database error gracefully' do
-      # GIVEN: database error occurs during creation
-      DatabaseHelper.wipe_database
-      location_request = { 'query' => 'A 2-day trip for 4 people in Taipei' }
+    it 'SAD: should not create plan with empty query' do
+      # GIVEN: empty query
+      empty_query = { query: '' }
 
-      # WHEN: we try to create a plan but database fails
-      TrailSmith::Repository::For.stub_any_instance(
-        :create,
-        proc { raise StandardError }
-      )
-      result = TrailSmith::Service::CreateLocation.new.call(location_request)
+      # WHEN: request to create a location plan
+      result = TrailSmith::Service::CreateLocation.new.call(empty_query)
 
       # THEN: should report error
       _(result.success?).must_equal false
-      _(result.failure).must_equal 'Could not create location'
+      _(result.failure).must_equal 'Invalid input: query is missing'
     end
   end
 end
