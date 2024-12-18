@@ -15,7 +15,7 @@ module VcrHelper
     end
   end
 
-  def self.configure_vcr_for_map
+  def self.configure_vcr_for_map(recording: :new_episodes)
     VCR.configure do |vcr_config|
       vcr_config.filter_sensitive_data('<GOOGLE_MAPS_KEY>') { GOOGLE_MAPS_KEY }
       vcr_config.filter_sensitive_data('<GOOGLE_MAPS_KEY_ECS>') { CGI.escape(GOOGLE_MAPS_KEY) }
@@ -23,8 +23,9 @@ module VcrHelper
 
     VCR.insert_cassette(
       MAP_CASSETTE,
-      record: :new_episodes,
-      match_requests_on: %i[method uri headers]
+      record: recording,
+      match_requests_on: %i[method uri headers],
+      allow_playback_repeats: true
     )
   end
 

@@ -10,7 +10,7 @@ describe 'ListPlan Service Integration Test' do
   VcrHelper.setup_vcr
 
   before do
-    VcrHelper.configure_vcr_for_map
+    VcrHelper.configure_vcr_for_map(recording: :none)
   end
 
   after do
