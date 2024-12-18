@@ -1,74 +1,69 @@
 # frozen_string_literal: true
 
 require_relative '../../../helpers/spec_helper'
+require_relative '../../../helpers/vcr_helper'
+require_relative '../../../helpers/database_helper'
+require 'ostruct'
 
-describe 'Integration test of CreateLocation service with OpenAI and Google Maps' do
-  let(:input_query) { 'A 1-day trip for 2 people in Taipei' }
-  let(:openai_response) do
-    {
-      'num_people' => 2,
-      'region' => 'Taipei',
-      'day' => 1,
-      'spots' => [
-        { 'name' => 'Taipei 101', 'location' => 'Some location data' }
-      ],
-      'mode' => 'tourist'
-    }.to_json
+describe 'CreateLocation Service Integration Test' do
+  VcrHelper.setup_vcr
+
+  before do
+    VcrHelper.configure_vcr_for_map
   end
 
-  it 'must create a new location plan when given valid input' do
-    # GIVEN OpenAI responds with a valid recommendation
-    TrailSmith::Openai::OpenaiMapper.stub_any_instance(
-      :build_prompt,
-      OpenStruct.new(messages: [openai_response])
-    )
-
-    # WHEN we request to create a location plan
-    params = { 'query' => input_query }
-    result = TrailSmith::Service::CreateLocation.new.call(params)
-
-    # THEN we should receive a successful result with a stored plan
-    _(result.success?).must_equal true
-    plan = result.value!
-    _(plan).must_be_kind_of TrailSmith::Entity::Plan
-    _(plan.num_people).must_equal 2
-    _(plan.region).must_equal 'Taipei'
-    _(plan.day).must_equal 1
+  after do
+    VcrHelper.eject_vcr
   end
 
-  it 'must fail gracefully when OpenAI fails to respond' do
-    # GIVEN OpenAI fails to respond
-    TrailSmith::Openai::OpenaiMapper.stub_any_instance(
-      :build_prompt,
-      nil
-    )
+  describe 'Create a location plan' do
+    before do
+      DatabaseHelper.wipe_database
+    end
 
-    # WHEN we request to create a location plan
-    params = { 'query' => input_query }
-    result = TrailSmith::Service::CreateLocation.new.call(params)
+    it 'HAPPY: should create a new plan from valid input' do
+      # GIVEN: valid OpenAI response with location data
+      location_request = { 'query' => 'A 2-day trip for 4 people in Taipei' }
 
-    # THEN we should receive a failure result
-    _(result.success?).must_equal false
-    _(result.failure).must_equal 'Could not get recommendations'
-  end
+      # WHEN: request to create a location plan
+      result = TrailSmith::Service::CreateLocation.new.call(location_request)
 
-  it 'must fail gracefully when database operation fails' do
-    # GIVEN OpenAI responds but database save fails
-    TrailSmith::Openai::OpenaiMapper.stub_any_instance(
-      :build_prompt,
-      OpenStruct.new(messages: [openai_response])
-    )
-    TrailSmith::Repository::For.stub_any_instance(
-      :create,
-      proc { raise StandardError }
-    )
+      # THEN: should create and return the plan
+      _(result.success?).must_equal true
+      plan = result.value!
+      _(plan).must_be_kind_of TrailSmith::Entity::Plan
+      _(plan.num_people).must_equal 4
+      _(plan.region).must_equal 'Taipei'
+      _(plan.day).must_equal 2
+    end
 
-    # WHEN we request to create a location plan
-    params = { 'query' => input_query }
-    result = TrailSmith::Service::CreateLocation.new.call(params)
+    it 'SAD: should not create plan with invalid OpenAI response' do
+      # GIVEN: invalid response format
+      bad_query = { 'query' => 'invalid input that will cause OpenAI to fail' }
 
-    # THEN we should receive a failure result
-    _(result.success?).must_equal false
-    _(result.failure).must_equal 'Could not create location'
+      # WHEN: request to create a location plan
+      result = TrailSmith::Service::CreateLocation.new.call(bad_query)
+
+      # THEN: should report error
+      _(result.success?).must_equal false
+      _(result.failure).must_equal 'Could not get recommendations'
+    end
+
+    it 'BAD: should handle database error gracefully' do
+      # GIVEN: database error occurs during creation
+      DatabaseHelper.wipe_database
+      location_request = { 'query' => 'A 2-day trip for 4 people in Taipei' }
+
+      # WHEN: we try to create a plan but database fails
+      TrailSmith::Repository::For.stub_any_instance(
+        :create,
+        proc { raise StandardError }
+      )
+      result = TrailSmith::Service::CreateLocation.new.call(location_request)
+
+      # THEN: should report error
+      _(result.success?).must_equal false
+      _(result.failure).must_equal 'Could not create location'
+    end
   end
 end
