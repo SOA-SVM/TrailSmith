@@ -4,7 +4,18 @@ require 'dry/transaction'
 
 module TrailSmith
   module Service
-    # Service to create new location plan using OpenAI and Google Maps
+    # Service responsible for creating new location plans using OpenAI and Google Maps
+    #
+    # This class orchestrates the process of generating location recommendations
+    # through OpenAI and transforming them into storable plans using Google Maps.
+    # It handles:
+    # - Generating recommendations via OpenAI
+    # - Validating the generated recommendations
+    # - Building and storing location plans
+    #
+    # @param openai_mapper [OpenaiMapper] Mapper for generating recommendations
+    # @param maps_mapper [MapsMapper] Mapper for converting recommendations to plans
+    # @param repository [Repository] Repository for storing created plans
     class CreateLocation
       include Dry::Transaction
 
@@ -46,8 +57,6 @@ module TrailSmith
         else
           Failure('Invalid response format from OpenAI')
         end
-      rescue JSON::ParserError
-        Failure('Could not parse OpenAI response')
       end
 
       def create_plan(raw_response)

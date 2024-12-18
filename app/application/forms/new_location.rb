@@ -23,8 +23,8 @@ module TrailSmith
       rule(:origin_json) do
         if value
           begin
-            parsed_json = JSON.parse(value) # 解析 JSON 字串
-            key.failure('must be a valid JSON object') unless parsed_json.is_a?(Hash) # 確保是哈希結構
+            parsed_json = JSON.parse(value)
+            key.failure('must be a valid JSON object') unless parsed_json.is_a?(Hash)
           rescue JSON::ParserError
             key.failure('must be a valid JSON string')
           end
